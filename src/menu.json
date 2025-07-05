@@ -1,0 +1,140 @@
+{
+  "Drinks": {
+    "Whiskey": [
+      "K5",
+      "Highland",
+      "Special Courier",
+      "Royal Supreme",
+      "Misty Peak",
+      "Rock Bee",
+      "Sonfy",
+      "Royal XXX Rum",
+      "Black Mountain",
+      "Soju (Korean Wine)",
+      "Royal Stag",
+      "Red Label",
+      "Blenders Pride",
+      "Ravan (Vodka)"
+    ],
+    "Beer": [
+      "11000 (Bottle)",
+      "11000 (Can)",
+      "Foster",
+      "Red Panda",
+      "Druk Supreme",
+      "Lagar (Bottle)",
+      "Lagar (Can)",
+      "Chabchu"
+    ],
+    "Wine": [
+      "Raven",
+      "SPY",
+      "Breezer",
+      "Zum Zim",
+      "Takin"
+    ]
+  },
+  "Main Course": {
+    "Breakfast": [
+      "Puri with alu dum",
+      "Puri with ema datshi",
+      "Puri with mix veg",
+      "Puri with chana mottor",
+      "Chicken fried rice",
+      "Veg. fried rice",
+      "Pork fried rice",
+      "Beef fried rice",
+      "Egg fried rice",
+      "Suka roti",
+      "Sel roti"
+    ],
+    "Lunch & Dinner": [
+      "Chicken Curry",
+      "Pork Curry",
+      "Beef Curry",
+      "Mix veg.",
+      "Fish Curry",
+      "Pork Chilli",
+      "Beef Chilli",
+      "Chicken Chilli",
+      "Mushroom",
+      "Paneer",
+      "Ema Datshi"
+    ]
+  },
+  "Nepali Thali": {
+    "Veg": [
+      "Paneer Thali",
+      "Mix veg. Thali"
+    ],
+    "Non-Veg": [
+      "Chicken Thali",
+      "Beef Thali",
+      "Pork Thali",
+      "Fish Thali"
+    ]
+  },
+  "Chinese Dish":{
+    "Chinese":[
+    "Chicken Chowmein",
+    "Pork Chowmein",
+    "Beef Chowmein",
+    "Veg. Chowmein",
+    "Egg Chowmein",
+    "Cheese Momo",
+    "Beef Momo",
+    "Egg thukpa",
+    "Beef thukpa",
+    "Veg. thukpa",
+    "Pork thukpa",
+    "Chicken thukpa",
+    "Koka (Veg./Non-veg)"
+  ]
+  } ,
+  "Snacks":{
+     "Snacks": [
+    "Pork Chilli",
+    "Beef Chilli",
+    "Chicken Chilli",
+    "Fish Fry",
+    "French Fry"
+  ]
+  },
+  "Samyang Noodles": {
+    "Type": [
+      "Veg",
+      "Non-Veg"
+    ],
+    "Flavors": [
+      "Pink",
+      "Green",
+      "2X Red",
+      "Black",
+      "Yellow",
+      "Kimchi",
+      "Yugaejang",
+      "Sutha"
+    ]
+  },
+  "Speciality":{
+    "Speciality":  [
+    "Alu Dum",
+    "Omlet",
+    "Egg Pouch",
+    "Pani Puri",
+    "Samosa"
+  ]
+  },
+  "Tea": {
+    "Tea":[
+    "Milk Tea",
+    "Black Tea",
+    "Lemon Tea",
+    "Green Tea",
+    "Milk Coffee",
+    "Black Coffee",
+    "Suja (Mac tea)",
+    "Ginger Honey Tea"
+  ]
+  }
+}
