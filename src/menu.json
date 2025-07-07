@@ -2,6 +2,8 @@
   "Drinks": {
     "Whiskey": [
       "K5",
+      "Baileys",
+      "Yahla Cream Liqueur",
       "Highland",
       "Special Courier",
       "Royal Supreme",
@@ -11,24 +13,23 @@
       "Royal XXX Rum",
       "Black Mountain",
       "Soju (Korean Wine)",
-      "Royal Stag",
       "Red Label",
-      "Blenders Pride",
       "Ravan (Vodka)"
     ],
     "Beer": [
       "11000 (Bottle)",
       "11000 (Can)",
-      "Foster",
       "Red Panda",
       "Druk Supreme",
       "Lagar (Bottle)",
-      "Lagar (Can)",
-      "Chabchu"
+      "Lagar (Can)"
+      
     ],
     "Wine": [
+      "Mimi Mangeolli",
+      "Kook Soon Dang",
+      "Makgeolli",
       "Raven",
-      "SPY",
       "Breezer",
       "Zum Zim",
       "Takin"
@@ -65,7 +66,9 @@
   "Nepali Thali": {
     "Veg": [
       "Paneer Thali",
-      "Mix veg. Thali"
+      "Mix veg. Thali",
+      "EmaDatshi Thali",
+      "Mushroom Dathsi Thali"
     ],
     "Non-Veg": [
       "Chicken Thali",
@@ -97,7 +100,9 @@
     "Beef Chilli",
     "Chicken Chilli",
     "Fish Fry",
-    "French Fry"
+    "French Fry",
+    "Chicken Drumstick (KFC)",
+    "Sel Roti"
   ]
   },
   "Samyang Noodles": {
