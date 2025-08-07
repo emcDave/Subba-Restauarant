@@ -3,7 +3,7 @@ import type { MenuData } from "./types/menu";
 import MenuCategory from "./components/MenuCategory";
 import logo from './assets/subba.jpg';
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const App: React.FC = () => {
   const data: MenuData = menuData;
