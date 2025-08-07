@@ -1,9 +1,16 @@
 // src/types/menu.ts
 
+export interface MenuItem {
+  name: string;
+  price?: number;
+  description?: string;
+  img?: string;
+}
+
 export interface MenuData {
   [category: string]:
-    | string[]
+    | MenuItem[]
     | {
-        [subCategory: string]: string[];
+        [subCategory: string]: MenuItem[];
       };
 }
