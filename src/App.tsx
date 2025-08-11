@@ -1,8 +1,5 @@
 import menuData from "./menu.json";
 import type { MenuData } from "./types/menu";
-import logo from "./assets/subba.jpg";
-import bg from "./assets/bg.png";
-
 const App: React.FC = () => {
   const data: MenuData = menuData;
 
