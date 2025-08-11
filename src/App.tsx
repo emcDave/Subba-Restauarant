@@ -383,8 +383,10 @@ const App: React.FC = () => {
         </div>
       </main>
       <footer className="w-full text-center h-[300px] bg-[#312F30] text-white flex items-center justify-center text-[18px] flex flex-col gap-[8px]">
-        <p>Street Name | Phuentsholing | Chukha | Bhutan</p>
-        <p>email: subbarestaurant@gmail.com | contact: 77861149 / 77626862</p>
+        <p>Gongkhar | Jakar | Bumthang</p>
+        <p>
+          email: subbarestaurant@gmail.com <br /> contact: 77861149 / 77626862
+        </p>
 
         <div className="text-[14px] text-white/60">
           © 2025 Subba Restaurant. All rights reserved.
