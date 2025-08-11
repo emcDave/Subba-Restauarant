@@ -392,7 +392,7 @@ const App: React.FC = () => {
       </footer>
       <button
         onClick={handleWhatsAppClick}
-        className="fixed bottom-20 right-10 bg-green-500 text-white p-3 rounded-full shadow-lg z-50"
+        className="fixed bottom-6 right-6 sm:bottom-20 sm:right-20 bg-green-500 text-white p-3 rounded-full shadow-lg z-50"
       >
         <img src="/whatsapp.png" alt="WhatsApp" className="w-10 h-10" />
       </button>
