@@ -23,7 +23,7 @@ const App: React.FC = () => {
       {/* Mobile Image - Full Screen on Mobile */}
       <div className="block sm:hidden">
         <img
-          src="/src/assets/fullmobile.png"
+          src="/fullmobile.png"
           alt="Subba Restaurant Mobile Menu"
           className="w-screen h-auto object-cover"
         />
@@ -48,7 +48,7 @@ const App: React.FC = () => {
 
               <div className="flex justify-center items-center rounded-full bg-white p-[8px] sm:p-[10px] size-[280px] sm:size-[320px] lg:size-[350px] z-10">
                 <img
-                  src={logo}
+                  src="/subba.jpg"
                   alt="Subba Logo"
                   className="w-[240px] h-[180px] sm:w-[280px] sm:h-[210px] lg:w-[300px] lg:h-[229px] rounded-full"
                 />
@@ -58,7 +58,7 @@ const App: React.FC = () => {
               </h1>
 
               <img
-                src={bg}
+                src="/bg.png"
                 alt="bg Logo"
                 className="absolute top-0 left-0 w-full border-2 border-white/10 rounded-[20px] h-[500px] sm:h-[650px] opacity-50"
               />
@@ -69,7 +69,7 @@ const App: React.FC = () => {
               <div className="flex flex-col gap-[10px]">
                 <div className="border-2 border-white/10 rounded-[20px] size-[280px] sm:size-[320px] lg:size-[350px] p-2">
                   <img
-                    src="/src/assets/chicken.png"
+                    src="/chicken.png"
                     alt="Chicken"
                     className="w-[260px] h-[250px] sm:w-[300px] sm:h-[290px] lg:w-[340px] lg:h-[330px] rounded-[12px]"
                   />
@@ -86,7 +86,7 @@ const App: React.FC = () => {
               <div className="flex flex-col gap-[10px]">
                 <div className="border-2 border-white/10 rounded-[20px] size-[280px] sm:size-[320px] lg:size-[350px] p-2">
                   <img
-                    src="/src/assets/rice.png"
+                    src="/rice.png"
                     alt="Rice"
                     className="w-[260px] h-[250px] sm:w-[300px] sm:h-[290px] lg:w-[340px] lg:h-[330px] rounded-[12px]"
                   />
@@ -104,7 +104,7 @@ const App: React.FC = () => {
               <div className="flex flex-col gap-[10px]">
                 <div className="border-2 border-white/10 rounded-[20px] size-[280px] sm:size-[320px] lg:size-[350px] p-2">
                   <img
-                    src="/src/assets/paneer.png"
+                    src="/paneer.png"
                     alt="Paneer"
                     className="w-[260px] h-[250px] sm:w-[300px] sm:h-[290px] lg:w-[340px] lg:h-[330px] rounded-[12px]"
                   />
@@ -130,7 +130,7 @@ const App: React.FC = () => {
               <div className="flex flex-col gap-[10px]">
                 <div className="border-2 border-white/10 rounded-[20px] size-[280px] sm:size-[320px] lg:size-[350px] p-2">
                   <img
-                    src="/src/assets/pork.png"
+                    src="/pork.png"
                     alt="Pork"
                     className="w-[260px] h-[250px] sm:w-[300px] sm:h-[290px] lg:w-[340px] lg:h-[330px] rounded-[12px]"
                   />
@@ -148,7 +148,7 @@ const App: React.FC = () => {
               <div className="flex flex-col gap-[10px]">
                 <div className="border-2 border-white/10 rounded-[20px] size-[280px] sm:size-[320px] lg:size-[350px] p-2">
                   <img
-                    src="/src/assets/puri.png"
+                    src="/puri.png"
                     alt="Puri"
                     className="w-[260px] h-[250px] sm:w-[300px] sm:h-[290px] lg:w-[340px] lg:h-[330px] rounded-[12px]"
                   />
@@ -166,7 +166,7 @@ const App: React.FC = () => {
               <div className="flex flex-col gap-[10px]">
                 <div className="border-2 border-white/10 rounded-[20px] size-[280px] sm:size-[320px] lg:size-[350px] p-2">
                   <img
-                    src="/src/assets/datshi.png"
+                    src="/datshi.png"
                     alt="Datshi"
                     className="w-[260px] h-[250px] sm:w-[300px] sm:h-[290px] lg:w-[340px] lg:h-[330px] rounded-[12px]"
                   />
@@ -211,7 +211,7 @@ const App: React.FC = () => {
                   </div>
                 ))}
                 <img
-                  src="/src/assets/snack.png"
+                  src="/snack.png"
                   alt="Datshi"
                   className="hidden sm:block w-[150px] sm:w-[200px] h-[280px] sm:h-[380px] rounded-[12px] absolute right-4 sm:right-20 top-10"
                 />
@@ -228,7 +228,7 @@ const App: React.FC = () => {
                   </div>
                 ))}
                 <img
-                  src="/src/assets/cups.png"
+                  src="/cups.png"
                   alt="Datshi"
                   className="hidden sm:block w-[200px] sm:w-[250px] h-[280px] sm:h-[380px] rounded-[12px] absolute right-4 sm:right-20 top-10"
                 />
@@ -262,7 +262,7 @@ const App: React.FC = () => {
                   </div>
                 ))}
                 <img
-                  src="/src/assets/breakfast.png"
+                  src="/breakfast.png"
                   alt="Datshi"
                   className="hidden sm:block w-[200px] sm:w-[300px] h-[160px] sm:h-[220px] rounded-[12px] absolute right-4 sm:right-20 top-20 sm:top-40"
                 />
@@ -279,7 +279,7 @@ const App: React.FC = () => {
                   </div>
                 ))}
                 <img
-                  src="/src/assets/dina.png"
+                  src="/dina.png"
                   alt="Datshi"
                   className="hidden sm:block w-[200px] sm:w-[300px] rounded-[12px] absolute right-2 sm:right-5 top-10 sm:top-20"
                 />
@@ -296,12 +296,12 @@ const App: React.FC = () => {
                 Alcoholic Beverages
               </h1>
               <img
-                src="/src/assets/al1.png"
+                src="/al1.png"
                 alt="Datshi"
                 className="hidden sm:block w-[200px] sm:w-[300px] rounded-[12px] absolute left-2 sm:left-5 bottom-0"
               />
               <img
-                src="/src/assets/al2.png"
+                src="/al2.png"
                 alt="Datshi"
                 className="hidden sm:block w-[200px] sm:w-[300px] rounded-[12px] absolute right-2 sm:right-5 bottom-0"
               />
@@ -347,7 +347,7 @@ const App: React.FC = () => {
                   </div>
                 ))}
                 <div className="rounded-lg py-3 bg-[#312F30] w-full sm:w-[100%]">
-                  <h3 className="text-white text-center text-[20px] sm:text-[30px]">
+                  <h3 className="text-[20px] sm:text-[30px] text-white text-center">
                     Wine
                   </h3>
                 </div>
