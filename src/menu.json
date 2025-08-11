@@ -48,7 +48,7 @@
       {"name": "Suka roti", "price": 3, "description": "Traditional Bhutanese bread.", "img": "sukaroti.jpg"},
       {"name": "Sel roti", "price": 3, "description": "Nepali rice flour doughnut.", "img": "selroti.jpg"}
     ],
-    "Lunch & Dinner": [
+    "Lunch": [
       {"name": "Chicken Curry", "price": 7, "description": "Traditional Bhutanese chicken curry.", "img": "chickencurry.jpg"},
       {"name": "Pork Curry", "price": 7, "description": "Rich pork curry with spices.", "img": "porkcurry.jpg"},
       {"name": "Beef Curry", "price": 7, "description": "Tender beef curry.", "img": "beefcurry.jpg"},
