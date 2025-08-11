@@ -32,7 +32,7 @@ const App: React.FC = () => {
               Food Menu
             </h1>
           </div>
-          <div className="w-full flex flex-col gap-[10px] mt-[6%] justify-center items-center relative h-[450px]">
+          <div className="w-full flex flex-col gap-[10px] mt-[6%] justify-center items-center relative h-[450px] sm:h-[650px]">
             <h1 className="text-[20px] sm:text-[34px] z-10 font-semibold text-white text-center">
               Subba Restaurant
             </h1>
@@ -54,7 +54,7 @@ const App: React.FC = () => {
             <img
               src="/bg.png"
               alt="bg Logo"
-              className="absolute top-0 left-0 w-full border-2 border-white/10 rounded-[20px] h-[450px] opacity-50"
+              className="absolute top-0 left-0 w-full border-2 border-white/10 rounded-[20px] h-[450px] sm:h-[650px] opacity-50"
             />
           </div>
         </div>
@@ -385,7 +385,28 @@ const App: React.FC = () => {
       <footer className="w-full text-center h-[300px] bg-[#312F30] text-white flex items-center justify-center text-[18px] flex flex-col gap-[8px]">
         <p>Gongkhar | Jakar | Bumthang</p>
         <p>
-          email: subbarestaurant@gmail.com <br /> contact: 77861149 / 77626862
+          email:{" "}
+          <a
+            href="mailto:subbarestaurant@gmail.com"
+            className="underline text-blue-300 hover:text-blue-500"
+          >
+            subbarestaurant@gmail.com
+          </a>{" "}
+          <br />
+          contact:{" "}
+          <a
+            href="tel:77861149"
+            className="underline text-blue-300 hover:text-blue-500"
+          >
+            77861149
+          </a>{" "}
+          /{" "}
+          <a
+            href="tel:77626862"
+            className="underline text-blue-300 hover:text-blue-500"
+          >
+            77626862
+          </a>
         </p>
 
         <div className="text-[14px] text-white/60">
