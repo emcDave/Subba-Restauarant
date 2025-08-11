@@ -18,7 +18,7 @@ const App: React.FC = () => {
 
   const handleWhatsAppClick = () => {
     const phoneNumber = "77626862"; // Using the first contact number from the footer
-    const message = "Hello! I'd like to order from Subba Restaurant.";
+    // const message = "Hello! I'd like to order from Subba Restaurant.";
     const whatsappUrl = `https://wa.me/${phoneNumber}}`;
     window.open(whatsappUrl, "_blank");
   };
