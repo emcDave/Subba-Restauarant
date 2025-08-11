@@ -1,18 +1,10 @@
 import menuData from "./menu.json";
 import type { MenuData } from "./types/menu";
-import MenuCategory from "./components/MenuCategory";
 import logo from "./assets/subba.jpg";
 import bg from "./assets/bg.png";
 
-import { useState } from "react";
-
 const App: React.FC = () => {
   const data: MenuData = menuData;
-  const [search, setSearch] = useState("");
-  const [theme, setTheme] = useState("dark");
-  const [selectedCategory, setSelectedCategory] = useState(
-    Object.keys(data)[0]
-  );
 
   const snacksItems = (data.Snacks as any)?.Snacks || [];
 
@@ -25,40 +17,6 @@ const App: React.FC = () => {
     beer: (data.Drinks as any)?.Beer || [],
     wine: (data.Drinks as any)?.Wine || [],
   };
-
-  // Toggle theme
-  const toggleTheme = () => setTheme(theme === "light" ? "dark" : "dark");
-
-  // Centralized filter function
-  const filterItems = (arr: any[]) =>
-    arr.filter(
-      (item) =>
-        item.name.toLowerCase().includes(search.toLowerCase()) ||
-        (item.description &&
-          item.description.toLowerCase().includes(search.toLowerCase()))
-    );
-
-  // If search is active, show results from the whole dataset
-  let itemsToShow: any[] = [];
-  if (search.trim()) {
-    Object.values(data).forEach((categoryData) => {
-      if (Array.isArray(categoryData)) {
-        itemsToShow.push(...filterItems(categoryData));
-      } else {
-        Object.values(categoryData).forEach((subItems) => {
-          itemsToShow.push(...filterItems(subItems));
-        });
-      }
-    });
-  } else {
-    const categoryData = data[selectedCategory];
-    if (Array.isArray(categoryData)) {
-      itemsToShow = categoryData;
-    } else if (categoryData) {
-      // Flatten all subcategory items into one array
-      itemsToShow = Object.values(categoryData).flat();
-    }
-  }
 
   return (
     <div>
