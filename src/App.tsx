@@ -1,25 +1,29 @@
 import menuData from "./menu.json";
-import type { MenuData } from "./types/menu";
 
 const App: React.FC = () => {
-  const data: MenuData = menuData;
+  const data: any = menuData;
 
-  const snacksItems = (data.Snacks as any)?.Snacks || [];
+  // Fix data access patterns to match the actual JSON structure
+  const snacksItems = data.Snacks?.Snacks || [];
+  const hotDrinksItems = data.Tea?.Tea || [];
+  const breakfast = data["Main Course"]?.Breakfast || [];
+  const nepalThaliVeg = data["Nepali Thali"]?.Veg || [];
+  const nepalThali = data["Nepali Thali"]?.NonVeg || [];
+  const chinese = data["Chinese Dish"]?.Chinese || [];
+  const samyangFlavors = data["Samyang Noodles"]?.Flavors || [];
+  const speciality = data["Speciality"]?.Speciality || [];
 
-  const hotDrinksItems = (data.Tea as any)?.Tea || [];
-  const breakfast = (data["Main Course"] as any)?.Breakfast || [];
-  const lunch = (data["Main Course"] as any)?.Lunch || [];
+  const lunchDinner = data["Main Course"]?.["Lunch & Dinner"] || [];
 
   const drinksItems = {
-    whiskey: (data.Drinks as any)?.Whiskey || [],
-    beer: (data.Drinks as any)?.Beer || [],
-    wine: (data.Drinks as any)?.Wine || [],
+    whiskey: data.Drinks?.Whiskey || [],
+    beer: data.Drinks?.Beer || [],
+    wine: data.Drinks?.Wine || [],
   };
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "77626862"; // Using the first contact number from the footer
-    // const message = "Hello! I'd like to order from Subba Restaurant.";
-    const whatsappUrl = `https://wa.me/${phoneNumber}}`;
+    const phoneNumber = "77626862";
+    const whatsappUrl = `https://wa.me/${phoneNumber}`;
     window.open(whatsappUrl, "_blank");
   };
 
@@ -27,291 +31,390 @@ const App: React.FC = () => {
     <div>
       <main className="">
         <div className="flex flex-col gap-[16px] m-[6%] bg-[#312F30] h-full rounded-2xl p-[5%] relative mt-[8%] mb-[0%]">
-          <div className="bg-gradient-to-r from-[#FFAE01] to-[#E96B00] p-[20px] py-[1%] rounded-2xl absolute top-[-30px] left-7 sm:top-[-80px] sm:left-20 w-[85%] flex justify-center items-center">
-            <h1 className="text-[40px]  sm:text-[80px] text-white">
-              Food Menu
-            </h1>
+          <div className="bg-gradient-to-r from-[#FFAE01] to-[#E96B00] p-[20px] py-[3%] sm:py-[1%] rounded-2xl absolute top-[-30px] left-0 sm:top-[-80px] sm:left-20 w-[100%] sm:w-[85%] flex justify-center items-center">
+            <h1 className="text-[14px] sm:text-[80px] text-white">Food Menu</h1>
           </div>
           <div className="w-full flex flex-col gap-[10px] mt-[6%] justify-center items-center relative h-[450px] sm:h-[650px]">
-            <h1 className="text-[20px] sm:text-[34px] z-10 font-semibold text-white text-center">
+            <h1 className="text-[14px] sm:text-[34px] z-10 font-semibold text-white text-center">
               Subba Restaurant
             </h1>
-            <h1 className="text-[16px] sm:text-[20px] z-10 text-white/60">
-              since 2001
+            <h1 className="text-[12px] sm:text-[20px] z-10 text-white/60">
+              since 2000
             </h1>
 
             <div className="flex justify-center items-center rounded-full bg-white p-[10px] size-[200px] sm:size-[350px] z-10">
               <img
                 src="/subba.jpg"
                 alt="Subba Logo"
-                className="w-[200px] sm:w-[300px] h-[150px] sm:h-[229px] rounded-full"
+                className="w-[200px] sm:w-[300px] h-[200px] sm:h-[300px] rounded-full object-cover"
               />
             </div>
-            <h1 className="text-[16px] sm:text-[20px] z-10 text-white/70">
+            <h1 className="text-[12px] sm:text-[20px] z-10 text-white/70">
               77861149 / 77626862
             </h1>
 
             <img
               src="/bg.png"
               alt="bg Logo"
-              className="absolute top-0 left-0 w-full border-2 border-white/10 rounded-[20px] h-[450px] sm:h-[650px] opacity-50"
+              className="hidden sm:block absolute top-0 left-0 w-full border-2 border-white/10 rounded-[20px] h-[450px] sm:h-[650px] opacity-50"
+            />
+            <img
+              src="/bgsm.png"
+              alt="bg Logo"
+              className="block sm:hidden absolute top-0 left-0 w-full border-2 border-white/10 rounded-[20px] h-[450px] sm:h-[650px] opacity-50"
             />
           </div>
         </div>
-        <div className="flex flex-col gap-[16px] m-[6%] mb-[3%] bg-[#312F30] h-full rounded-b-[40px] p-[5%] pb-[3%] relative">
-          <div className="w-full flex justify-between items-start sm:items-center">
-            <div className="flex flex-col gap-[10px]">
-              <div className="border-2 border-white/10 rounded-[20px] size-[100px] sm:size-[350px] p-2">
-                <img
-                  src="/chicken.png"
-                  alt="Chicken"
-                  className="w-[90px] sm:w-[340px] h-[80px] sm:h-[330px] rounded-[12px]"
-                />
-              </div>
-              <div className="flex flex-col gap-[8px] my-[16px]">
-                <p className="text-[16px] sm:text-[24px] text-white">
-                  Chicken Curry
-                </p>
-                <p className="text-[12px] sm:text-[18px] text-white/50 hidden sm:block">
-                  Rich chicken curry with spices.
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col gap-[10px]">
-              <div className="border-2 border-white/10 rounded-[20px] size-[100px] sm:size-[350px] p-2">
-                <img
-                  src="/rice.png"
-                  alt="Rice"
-                  className="w-[90px] sm:w-[340px] h-[80px] sm:h-[330px] rounded-[12px]"
-                />
-              </div>
-              <div className="flex flex-col gap-[8px] my-[16px]">
-                <p className="text-[16px] sm:text-[24px] text-white">
-                  Fried Rice
-                </p>
-                <p className="text-[12px] sm:text-[18px] text-white/50 hidden sm:block">
-                  Fried rice with mixed vegetables or meat
-                </p>
-              </div>
-            </div>
 
-            <div className="flex flex-col gap-[10px]">
-              <div className="border-2 border-white/10 rounded-[20px] size-[100px] sm:size-[350px] p-2">
-                <img
-                  src="/paneer.png"
-                  alt="Paneer"
-                  className="w-[90px] sm:w-[340px] h-[80px] sm:h-[330px] rounded-[12px]"
-                />
-              </div>
-              <div className="flex flex-col gap-[8px] my-[16px]">
-                <p className="text-[16px] sm:text-[24px] text-white">
-                  Paneer Curry
-                </p>
-                <p className="text-[12px] sm:text-[18px] text-white/50 hidden sm:block w-[90px] sm:w-auto">
-                  Fresh cottage cheese in rich gravy
-                </p>
-              </div>
-            </div>
+        <div className="m-[3%] sm:m-[5%]">
+          {/* Food Sections */}
+          <div className=" bg-gradient-to-r from-[#FFAE01] to-[#E96B00] p-[20px] py-[1%] rounded-2xl h-[50px] sm:h-[150px] flex justify-center items-center">
+            <h1 className="text-[14px] sm:text-[50px] text-white">
+              Main Course
+            </h1>
           </div>
-        </div>
-        <div className="m-[6%] my-[0%] bg-gradient-to-r from-[#FFAE01] to-[#E96B00] p-[20px] py-[1%] rounded-2xl h-[80px] sm:h-[150px] flex justify-center items-center">
-          <h1 className="text-[20px] sm:text-[50px] text-white">Main Course</h1>
-        </div>
-        <div className="flex flex-col gap-[16px] m-[6%] mt-[3%] bg-[#312F30] h-full rounded-t-[40px] p-[5%] pb-[3%] relative">
-          <div className="w-full flex justify-between items-start sm:items-center">
-            <div className="flex flex-col gap-[10px]">
-              <div className="border-2 border-white/10 rounded-[20px] size-[100px] sm:size-[350px] p-2">
-                <img
-                  src="/pork.png"
-                  alt="Pork"
-                  className="w-[90px] sm:w-[340px] h-[80px] sm:h-[330px] rounded-[12px]"
-                />
-              </div>
-              <div className="flex flex-col gap-[8px] my-[16px]">
-                <p className="text-[16px] sm:text-[24px] text-white">
-                  Pork Curry
-                </p>
-                <p className="text-[12px] sm:text-[18px] text-white/50 hidden sm:block">
-                  Tender pork in aromatic spices
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-[10px]">
-              <div className="border-2 border-white/10 rounded-[20px] size-[100px] sm:size-[350px] p-2">
-                <img
-                  src="/puri.png"
-                  alt="Puri"
-                  className="w-[90px] sm:w-[340px] h-[80px] sm:h-[330px] rounded-[12px]"
-                />
-              </div>
-              <div className="flex flex-col gap-[8px] my-[16px]">
-                <p className="text-[16px] sm:text-[24px] text-white">
-                  Puri Bread
-                </p>
-                <p className="text-[12px] sm:text-[18px] text-white/50 hidden sm:block">
-                  Traditional fried bread
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-[10px]">
-              <div className="border-2 border-white/10 rounded-[20px] size-[100px] sm:size-[350px] p-2">
-                <img
-                  src="/datshi.png"
-                  alt="Datshi"
-                  className="w-[90px] sm:w-[340px] h-[80px] sm:h-[330px] rounded-[12px]"
-                />
-              </div>
-              <div className="flex flex-col gap-[8px] my-[16px]">
-                <p className="text-[16px] sm:text-[24px] text-white">
-                  Ema Datshi
-                </p>
-                <p className="text-[12px] sm:text-[18px] text-white/50 hidden sm:block">
-                  Bhutan's national dish
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="m-[5%]">
-          {/* Snacks Sections */}
           {/* Desktop/Web Titles */}
-          <div className="grid grid-cols-2 gap-2 mx-4 mb-4 hidden sm:grid">
-            <div className="bg-[#312F30] rounded-lg py-3 w-[90%]">
-              <h3 className="text-white text-center text-[20px] sm:text-[30px]">
-                Snacks
+          <div className="grid grid-cols-2 gap-2 mx-4 mb-4 mt-[5%] hidden sm:grid">
+            <div className="rounded-lg py-3 bg-[#312F30] w-[90%]">
+              <h3 className="text-white text-center text-[14px] sm:text-[30px]">
+                Breakfast
               </h3>
             </div>
             <div className="rounded-lg py-3 bg-[#312F30] w-[100%]">
-              <h3 className="text-white text-center text-[20px] sm:text-[30px]">
+              <h3 className="text-white text-center text-[14px] sm:text-[30px]">
+                Lunch & Dinner
+              </h3>
+            </div>
+            <div></div>
+          </div>
+
+          {/* Food Menu */}
+          <div className="grid grid-cols-3 sm:grid-cols-2 gap-2 sm:gap-4 mx-2 sm:mx-4 pb-8">
+            <div className="space-y-2 sm:space-y-4 relative min-h-[200px] sm:min-h-[600px]">
+              {/* Mobile Title */}
+              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden">
+                <h3 className="text-white text-center text-[12px]">
+                  Breakfast
+                </h3>
+              </div>
+              {breakfast.map((item: string, index: number) => (
+                <div key={index} className="">
+                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-gray-800">
+                    {item}
+                  </h4>
+                </div>
+              ))}
+              <img
+                src="/breakfast.png"
+                alt="Breakfast"
+                className="hidden sm:block w-[80px] sm:w-[300px] h-[50px] sm:h-[220px] rounded-[12px] absolute right-[-20px] sm:right-20 top-[120px] sm:top-40"
+              />
+            </div>
+            <div className="space-y-2 sm:space-y-4 relative col-span-1 sm:col-span-1  mt-6 sm:mt-0">
+              {/* Mobile Title */}
+              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-1 sm:mb-2 sm:hidden">
+                <h3 className="text-white text-center text-[12px]">
+                  Lunch & Dinner
+                </h3>
+              </div>
+              {lunchDinner.map((item: string, index: number) => (
+                <div key={index} className="">
+                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-gray-800">
+                    {item}
+                  </h4>
+                </div>
+              ))}
+              <img
+                src="/dina.png"
+                alt="Dinner"
+                className="hidden sm:block w-[80px] sm:w-[300px] rounded-[12px] absolute right-0 sm:right-5 top-[80px] sm:top-20"
+              />
+            </div>
+            <div className="w-full h-full flex justify-center items-center sm:hidden">
+              <div className="grid grid-cols-2 gap-2">
+                <img
+                  src="/restaurant_icon_1.jpg"
+                  alt="Restaurant Icon 1"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_icon_2.jpg"
+                  alt="Restaurant Icon 2"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_food_1.jpg"
+                  alt="Restaurant Food 1"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/puri.png"
+                  alt="Restaurant Food 2"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/datshi.png"
+                  alt="Restaurant Icon 3"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/pork.png"
+                  alt="Restaurant Food 3"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Nepali Thali Section */}
+
+          <div className="my-[5%] bg-gradient-to-r from-[#FFAE01] relative to-[#E96B00] p-[10px] py-[1%] rounded-2xl h-[60px] sm:h-[150px]  flex justify-center items-center">
+            <h1 className="text-[14px] sm:text-[50px] text-bold text-white z-20">
+              Nepali Thali
+            </h1>
+          </div>
+
+          {/* Nepali Thali Menu */}
+          <div className="w-full mx-2 sm:mx-4 pb-8 flex flex-col sm:flex-row gap-2 sm:gap-4">
+            <div className="space-y-2 sm:space-y-8 relative w-full">
+              <div className="bg-[#312F30] rounded-lg py-2 sm:py-3 w-full mb-2 sm:mb-4">
+                <h3 className="text-white text-center text-[12px] sm:text-[30px]">
+                  Vegetarian Thali
+                </h3>
+              </div>
+              <div className="flex flex-wrap gap-3 sm:gap-6 justify-center ">
+                {nepalThaliVeg.map((item: string, index: number) => (
+                  <div key={index} className="text-center flex-shrink-0">
+                    <div className="w-16 h-16 sm:w-[150px] sm:h-[150px] mt-2 sm:mt-[30px] mx-auto mb-2 sm:mb-3 rounded-full border-2 border-[#FFAE01] overflow-hidden">
+                      <img
+                        src={`/nepal_${index + 1}.png`}
+                        alt={item}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-gray-800 text-center">
+                      {item}
+                    </h4>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="space-y-2 sm:space-y-8 relative w-full mt-6 sm:mt-0">
+              <div className="bg-[#312F30] rounded-lg py-2 sm:py-3 w-full mb-2 sm:mb-4">
+                <h3 className="text-white text-center text-[12px] sm:text-[30px]">
+                  Non-Vegetarian Thali
+                </h3>
+              </div>
+              <div className="flex flex-wrap gap-3 sm:gap-6 justify-center ">
+                {nepalThali.map((item: string, index: number) => (
+                  <div key={index} className="text-center flex-shrink-0">
+                    <div className="w-16 h-16 sm:w-[150px] sm:h-[150px] mt-2 sm:mt-[30px] mx-auto mb-2 sm:mb-3 rounded-full border-2 border-[#FFAE01] overflow-hidden">
+                      <img
+                        src={`/nepalN_${index + 1}.jpg`}
+                        alt={item}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-gray-800 text-center">
+                      {item}
+                    </h4>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Snacks Sections */}
+
+          <div className="my-[5%] bg-gradient-to-r from-[#FFAE01] relative to-[#E96B00] p-[10px] py-[1%] rounded-2xl h-[60px] sm:h-[150px]  flex justify-center items-center">
+            <h1 className="text-[14px] sm:text-[50px] text-bold text-white z-20">
+              Snacks & Tea
+            </h1>
+          </div>
+          {/* Desktop/Web Titles */}
+          <div className="grid grid-cols-2 gap-2 mx-4 mb-4 hidden sm:grid">
+            <div className="bg-[#312F30] rounded-lg py-3 w-[90%]">
+              <h3 className="text-white text-center text-[14px] sm:text-[30px]">
+                Snacks
+              </h3>
+            </div>
+            <div className="bg-[#312F30] rounded-lg py-3 w-[100%]">
+              <h3 className="text-white text-center text-[14px] sm:text-[30px]">
                 Tea & Coffee
               </h3>
             </div>
           </div>
 
           {/* Snacks Menu */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mx-4 mb-4">
-            <div className="space-y-3 relative">
+          <div className="grid grid-cols-3 sm:grid-cols-2 gap-2 sm:gap-4 mx-2 sm:mx-4 mb-4">
+            <div className="space-y-2 sm:space-y-4 relative col-span-1 sm:col-span-1 min-h-auto sm:min-h-[460px]">
               {/* Mobile Title */}
-              <div className="bg-[#312F30] rounded-lg py-3 w-full mb-2 sm:hidden">
-                <h3 className="text-white text-center text-[20px]">Snacks</h3>
+              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden">
+                <h3 className="text-white text-center text-[12px]">Snacks</h3>
               </div>
-              {snacksItems.map((item: any, index: number) => (
+              {snacksItems.map((item: string, index: number) => (
                 <div key={index} className="">
-                  <h4 className="font-semibold text-[18px] text-gray-800">
-                    {item.name}
+                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-gray-800 mt-auto sm:nt-[16px]">
+                    {item}
                   </h4>
-                  <p className="text-gray-400 text-md">{item.description}</p>
                 </div>
               ))}
               <img
                 src="/snack.png"
                 alt="Snacks"
-                className="h-[280px] sm:w-[200px] sm:h-[380px] rounded-[12px] absolute right-0 top-20 sm:top-10"
+                className="hidden sm:block w-[80px] sm:w-[200px] h-[50px] sm:h-[380px] rounded-[12px] absolute right-[-20px] sm:right-[20%] top-[120px] sm:top-10"
               />
             </div>
-            <div className="space-y-3 relative">
+            <div className="space-y-2 sm:space-y-4 relative col-span-1 sm:col-span-1 mt-6 sm:mt-0">
               {/* Mobile Title */}
-              <div className="bg-[#312F30] rounded-lg py-3 w-full mb-2 sm:hidden">
-                <h3 className="text-white text-center text-[20px]">
+              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-1 sm:mb-2 sm:hidden mt-auto sm:mt-[16px]">
+                <h3 className="text-white text-center text-[12px]">
                   Tea & Coffee
                 </h3>
               </div>
-              {hotDrinksItems.map((item: any, index: number) => (
+              {hotDrinksItems.map((item: string, index: number) => (
                 <div key={index} className="">
-                  <h4 className="font-semibold text-[18px] text-gray-800">
-                    {item.name}
+                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-gray-800">
+                    {item}
                   </h4>
-                  <p className="text-gray-400 text-md">{item.description}</p>
                 </div>
               ))}
               <img
                 src="/cups.png"
                 alt="Tea Cups"
-                className="w-[150px] sm:w-[250px]  h-[280px] sm:h-[380px] rounded-[12px] absolute right-5 sm:right-20 top-[150px] sm:top-10"
+                className="hidden sm:block w-[80px] sm:w-[250px] h-[50px] sm:h-[380px] rounded-[12px] absolute right-[-20px] sm:right-20 top-[80px] sm:top-10"
               />
             </div>
-          </div>
-          {/* Food Sections */}
-          {/* Desktop/Web Titles */}
-          <div className="grid grid-cols-2 gap-2 mx-4 mb-4 mt-[5%] hidden sm:grid">
-            <div className="rounded-lg py-3 bg-[#312F30] w-[90%]">
-              <h3 className="text-white text-center text-[20px] sm:text-[30px]">
-                Breakfast
-              </h3>
-            </div>
-            <div className="rounded-lg py-3 bg-[#312F30] w-[100%]">
-              <h3 className="text-white text-center text-[20px] sm:text-[30px]">
-                Lunch & Dinner
-              </h3>
+            <div className="w-full h-full flex justify-center items-center sm:hidden">
+              <div className="grid grid-cols-2 gap-2">
+                <img
+                  src="/restaurant_icon_4.jpg"
+                  alt="Restaurant Icon 4"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_icon_5.jpg"
+                  alt="Restaurant Icon 5"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_food_4.jpg"
+                  alt="Restaurant Food 4"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_food_5.jpg"
+                  alt="Restaurant Food 5"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_icon_6.jpg"
+                  alt="Restaurant Icon 6"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_food_6.jpg"
+                  alt="Restaurant Food 6"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+              </div>
             </div>
           </div>
 
-          {/* Food Menu */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mx-4 pb-8">
-            <div className="space-y-3 relative">
-              {/* Mobile Title */}
-              <div className="bg-[#312F30] rounded-lg py-3 w-full mb-2 sm:hidden">
-                <h3 className="text-white text-center text-[20px]">
-                  Breakfast
+          {/* Chinese Section */}
+          <div className="w-full mx-2 sm:mx-4 mb-4 mt-2 sm:mt-[5%]">
+            <div className="space-y-2 sm:space-y-4 relative w-full">
+              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4">
+                <h3 className="text-white text-center text-[12px] sm:text-[30px]">
+                  Chinese
                 </h3>
               </div>
-              {breakfast.map((item: any, index: number) => (
-                <div key={index} className="">
-                  <h4 className="font-semibold text-[18px] text-gray-800">
-                    {item.name}
-                  </h4>
-                  <p className="text-gray-400 text-md">{item.description}</p>
-                </div>
-              ))}
-              <img
-                src="/breakfast.png"
-                alt="Breakfast"
-                className="w-[200px] sm:w-[300px] h-[145px] sm:h-[220px] rounded-[12px] absolute right-[-50px] sm:right-20 top-[400px] sm:top-40"
-              />
-            </div>
-            <div className="space-y-3 relative">
-              {/* Mobile Title */}
-              <div className="bg-[#312F30] rounded-lg py-3 w-full mb-2 sm:hidden">
-                <h3 className="text-white text-center text-[20px]">
-                  Lunch & Dinner
-                </h3>
+              <div className="flex flex-wrap gap-3 sm:gap-6 justify-center">
+                {chinese.map((item: string, index: number) => (
+                  <div key={index} className="text-center flex-shrink-0">
+                    <div className="w-16 h-16 sm:w-[150px] sm:h-[150px] mt-2 sm:mt-[30px] mx-auto mb-2 sm:mb-3 rounded-full border-2 border-[#FFAE01] overflow-hidden">
+                      <img
+                        src={`/c${index + 1}.jpg`}
+                        alt={item}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-gray-800 text-center">
+                      {item}
+                    </h4>
+                  </div>
+                ))}
               </div>
-              {lunch.map((item: any, index: number) => (
-                <div key={index} className="">
-                  <h4 className="font-semibold text-[18px] text-gray-800">
-                    {item.name}
-                  </h4>
-                  <p className="text-gray-400 text-md">{item.description}</p>
-                </div>
-              ))}
-              <img
-                src="/dina.png"
-                alt="Dinner"
-                className="w-[200px] sm:w-[300px] rounded-[12px] absolute right-0 sm:right-5 top-[200px] sm:top-20"
-              />
             </div>
           </div>
-          <p className="p-5 py-8 bg-gray-100 rounded-lg text-[18px] text-center mt-[5%]">
-            <span className="font-bold">Notice:</span> If you have any health
-            concerns, allergies, or dietary restrictions, please inform us when
-            ordering.
-          </p>
 
-          <div className="my-[5%] bg-gradient-to-r from-[#FFAE01] relative to-[#E96B00] p-[20px] py-[1%] rounded-2xl h-[150px] flex justify-center items-center">
-            <h1 className="text-[30px] sm:text-[50px] text-bold text-white z-20">
+          {/* Samyang Noodles Section */}
+          <div className="w-full mx-2 sm:mx-4 mb-4 mt-2 sm:mt-[5%]">
+            <div className="space-y-2 sm:space-y-4 relative w-full">
+              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4">
+                <h3 className="text-white text-center text-[12px] sm:text-[30px]">
+                  Samyang Noodles( Veg / NonVeg)
+                </h3>
+              </div>
+              <div className="flex flex-wrap gap-3 sm:gap-6 justify-center ">
+                {samyangFlavors.map((item: string, index: number) => (
+                  <div key={index} className="text-center flex-shrink-0">
+                    <div className="w-16 h-16 sm:w-[150px] sm:h-[150px] mt-2 sm:mt-[30px] mx-auto mb-2 sm:mb-3 rounded-full border-2 border-[#FFAE01] overflow-hidden">
+                      <img
+                        src={`/s${index + 1}.png`}
+                        alt={item}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-gray-800 text-center">
+                      {item}
+                    </h4>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Speciality Section */}
+          <div className="w-full mx-2 sm:mx-4 mb-4 mt-2 sm:mt-[5%]">
+            <div className="space-y-2 sm:space-y-4 relative w-full">
+              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4">
+                <h3 className="text-white text-center text-[12px] sm:text-[30px]">
+                  Speciality Items
+                </h3>
+              </div>
+              <div className="flex flex-wrap gap-3 sm:gap-6 justify-center ">
+                {speciality.map((item: string, index: number) => (
+                  <div key={index} className="text-center flex-shrink-0">
+                    <div className="w-16 h-16 sm:w-[150px] sm:h-[150px] mt-2 sm:mt-[30px] mx-auto mb-2 sm:mb-3 rounded-full border-2 border-[#FFAE01] overflow-hidden">
+                      <img
+                        src={`/sp${index + 1}.jpg`}
+                        alt={item}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-gray-800 text-center">
+                      {item}
+                    </h4>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="my-[5%] bg-gradient-to-r from-[#FFAE01] relative to-[#E96B00] p-[10px] py-[1%] rounded-2xl h-[60px] sm:h-[150px] flex justify-center items-center">
+            <h1 className="text-[14px] sm:text-[50px] text-bold text-white z-20">
               Alcoholic Beverages
             </h1>
             <img
               src="/al1.png"
               alt="Alcohol 1"
-              className="h-[80px] sm:h-auto w-auto sm:w-[300px] rounded-[12px] absolute left-5 bottom-0"
+              className="h-[30px] sm:h-auto w-auto sm:w-[300px] rounded-[12px] absolute left-2 sm:left-5 bottom-2 sm:bottom-0"
             />
             <img
               src="/al2.png"
               alt="Alcohol 2"
-              className="h-[80px] sm:h-auto w-auto sm:w-[300px] rounded-[12px] absolute right-5 bottom-0"
+              className="h-[30px] sm:h-auto w-auto sm:w-[300px] rounded-[12px] absolute right-2 sm:right-5 bottom-2 sm:bottom-0"
             />
           </div>
 
@@ -319,70 +422,101 @@ const App: React.FC = () => {
           {/* Desktop/Web Titles */}
           <div className="grid grid-cols-2 gap-2 mx-4 mb-4 hidden sm:grid">
             <div className="rounded-lg py-3 bg-[#312F30] w-[90%]">
-              <h3 className="text-white text-center text-[20px] sm:text-[30px]">
+              <h3 className="text-white text-center text-[14px] sm:text-[30px]">
                 Whiskey
               </h3>
             </div>
             <div className="rounded-lg py-3 bg-[#312F30] w-[100%]">
-              <h3 className="text-white text-center text-[20px] sm:text-[30px]">
+              <h3 className="text-white text-center text-[14px] sm:text-[30px]">
                 Beer & Wine
               </h3>
             </div>
           </div>
 
           {/* Drinks Menu */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mx-4 pb-8">
-            <div className="space-y-3">
+          <div className="grid grid-cols-3 sm:grid-cols-2 gap-2 sm:gap-4 mx-2 sm:mx-4 pb-8">
+            <div className="space-y-2 sm:space-y-4 relative col-span-1">
               {/* Mobile Title */}
-              <div className="bg-[#312F30] rounded-lg py-3 w-full mb-2 sm:hidden">
-                <h3 className="text-white text-center text-[20px]">Whiskey</h3>
+              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden">
+                <h3 className="text-white text-center text-[12px]">Whiskey</h3>
               </div>
-              {drinksItems.whiskey.map((item: any, index: number) => (
+              {drinksItems.whiskey.map((item: string, index: number) => (
                 <div key={index} className="">
-                  <h4 className="font-semibold text-[18px] text-gray-800">
-                    {item.name}
+                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-gray-800">
+                    {item}
                   </h4>
-                  <p className="text-gray-400 text-md">{item.description}</p>
                 </div>
               ))}
             </div>
-            <div className="space-y-3">
+            <div className="space-y-2 sm:space-y-4 relative col-span-1 sm:col-span-1 mt-6 sm:mt-0">
               {/* Mobile Title */}
-              <div className="bg-[#312F30] rounded-lg py-3 w-full mb-2 sm:hidden">
-                <h3 className="text-white text-center text-[20px]">
+              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-1 sm:mb-2 sm:hidden">
+                <h3 className="text-white text-center text-[12px]">
                   Beer & Wine
                 </h3>
               </div>
-              {drinksItems.beer.map((item: any, index: number) => (
+              {drinksItems.beer.map((item: string, index: number) => (
                 <div key={index} className="">
-                  <h4 className="font-semibold text-[18px] text-gray-800">
-                    {item.name}
+                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-gray-800">
+                    {item}
                   </h4>
-                  <p className="text-gray-400 text-md">{item.description}</p>
                 </div>
               ))}
               <div className="rounded-lg py-3 bg-[#312F30] w-[100%] mt-6 hidden sm:block">
-                <h3 className="text-white text-center text-[20px] sm:text-[30px]">
+                <h3 className="text-white text-center text-[14px] sm:text-[30px]">
                   Wine
                 </h3>
               </div>
               {/* Mobile Title for Wine */}
-              <div className="bg-[#312F30] rounded-lg py-3 w-full mb-2 sm:hidden mt-6">
-                <h3 className="text-white text-center text-[20px]">Wine</h3>
+              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-1 sm:mb-2 sm:hidden mt-6">
+                <h3 className="text-white text-center text-[12px]">Wine</h3>
               </div>
-              {drinksItems.wine.map((item: any, index: number) => (
+              {drinksItems.wine.map((item: string, index: number) => (
                 <div key={index} className="">
-                  <h4 className="font-semibold text-[18px] text-gray-800">
-                    {item.name}
+                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-gray-800">
+                    {item}
                   </h4>
-                  <p className="text-gray-400 text-md">{item.description}</p>
                 </div>
               ))}
+            </div>
+            <div className="w-full h-full flex justify-center items-center sm:hidden">
+              <div className="grid grid-cols-2 gap-2">
+                <img
+                  src="/restaurant_icon_47.jpg"
+                  alt="Restaurant Icon 11"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_icon_46.jpg"
+                  alt="Restaurant Icon 12"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_icon_44.jpg"
+                  alt="Restaurant Food 9"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/sonfy.jpg"
+                  alt="Restaurant Food 10"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/Yalha.jpg"
+                  alt="Restaurant Icon 13"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/redLabel.jpg"
+                  alt="Restaurant Food 11"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
       </main>
-      <footer className="w-full text-center h-[300px] bg-[#312F30] text-white flex items-center justify-center text-[18px] flex flex-col gap-[8px]">
+      <footer className="w-full text-center h-[200px] sm:h-[300px] bg-[#312F30] text-white flex items-center justify-center text-[12px] sm:text-[18px] flex flex-col gap-[8px]">
         <p>Gongkhar | Jakar | Bumthang</p>
         <p>
           email:{" "}
@@ -409,7 +543,7 @@ const App: React.FC = () => {
           </a>
         </p>
 
-        <div className="text-[14px] text-white/60">
+        <div className="text-[10px] sm:text-[14px] text-white/60">
           © 2025 Subba Restaurant. All rights reserved.
         </div>
       </footer>

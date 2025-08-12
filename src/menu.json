@@ -1,88 +1,145 @@
 {
   "Drinks": {
     "Whiskey": [
-      {"name": "K5", "price": 8, "description": "Premium Bhutanese whiskey, smooth and rich.", "img": "k5.jpg"},
-      {"name": "Baileys Irish Cream", "price": 7, "description": "Classic Irish cream liqueur, sweet and creamy.", "img": "baileys.jpg"},
-      {"name": "Yahla Cream Liqueur", "price": 7, "description": "Smooth cream liqueur with a hint of vanilla.", "img": "yahla.jpg"},
-      {"name": "Highland", "price": 6, "description": "Aged whiskey with a smoky finish.", "img": "highland.jpg"},
-      {"name": "Special Courier", "price": 6, "description": "Bold whiskey with a spicy kick.", "img": "courier.jpg"},
-      {"name": "Royal Supreme", "price": 7, "description": "Supreme blend for a royal taste.", "img": "royalsupreme.jpg"},
-      {"name": "Misty Peak", "price": 6, "description": "Light and aromatic whiskey.", "img": "mistypeak.jpg"},
-      {"name": "Rock Bee", "price": 6, "description": "Honey-infused whiskey.", "img": "rockbee.jpg"},
-      {"name": "Sonfy", "price": 6, "description": "Smooth and mellow whiskey.", "img": "sonfy.jpg"},
-      {"name": "Royal XXX Rum", "price": 6, "description": "Strong rum with a rich flavor.", "img": "royalxxx.jpg"},
-      {"name": "Black Mountain", "price": 7, "description": "Dark whiskey with earthy notes.", "img": "blackmountain.jpg"},
-      {"name": "Soju (Korean Wine)", "price": 5, "description": "Popular Korean rice wine.", "img": "soju.jpg"},
-      {"name": "Red Label", "price": 8, "description": "Classic blended Scotch whisky.", "img": "redlabel.jpg"},
-      {"name": "Ravan (Vodka)", "price": 6, "description": "Smooth vodka, perfect for cocktails.", "img": "ravan.jpg"}
+      "K5",
+      "Baileys Irish Cream",
+      "Yahla Cream Liqueur",
+      "Highland",
+      "Special Courier",
+      "Royal Supreme",
+      "Misty Peak",
+      "Rock Bee",
+      "Sonfy",
+      "Royal XXX Rum",
+      "Black Mountain",
+      "Soju (Korean Wine)",
+      "Red Label",
+      "Ravan (Vodka)"
     ],
     "Beer": [
-      {"name": "11000 (Bottle)", "price": 5, "description": "Popular local beer, crisp and refreshing.", "img": "/Drinks/Beer/11000.jpg"},
-      {"name": "11000 (Can)", "price": 5, "description": "Same great taste in a can.", "img": "/Drinks/Beer/11000.jpg"},
-      {"name": "Red Panda", "price": 6, "description": "Craft beer from Bhutan, malty and aromatic.", "img": "/Drinks/Beer/redPanda.jpg"},
-      {"name": "Druk Supreme", "price": 6, "description": "Premium Bhutanese lager.", "img": "/Drinks/Beer/DrukSupreme.jpg"},
-      {"name": "Lagar (Bottle)", "price": 5, "description": "Classic lager in a bottle.", "img": "/Drinks/Beer/lager.jpg"},
-      {"name": "Lagar (Can)", "price": 5, "description": "Classic lager in a can.", "img": "/Drinks/Beer/lagerBottle.jpg"}
+      "11000 (Bottle)",
+      "11000 (Can)",
+      "Red Panda",
+      "Druk Supreme",
+      "Lagar (Bottle)",
+      "Lagar (Can)"
+      
     ],
     "Wine": [
-      {"name": "Mimi Mangeolli", "price": 7, "description": "Sweet Korean rice wine.", "img": "mimi.jpg"},
-      {"name": "Kook Soon Dang", "price": 7, "description": "Traditional Korean wine.", "img": "kooksoon.jpg"},
-      {"name": "Makgeolli", "price": 6, "description": "Milky Korean rice wine.", "img": "makgeolli.jpg"},
-      {"name": "Raven", "price": 6, "description": "Smooth and fruity wine.", "img": "raven.jpg"},
-      {"name": "Breezer", "price": 5, "description": "Refreshing fruit-flavored drink.", "img": "breezer.jpg"},
-      {"name": "Zum Zim", "price": 6, "description": "Unique Bhutanese wine.", "img": "zumzim.jpg"},
-      {"name": "Takin", "price": 6, "description": "Local specialty wine.", "img": "takin.jpg"}
+      "Mimi Mangeolli",
+      "Kook Soon Dang",
+      "Makgeolli",
+      "Raven",
+      "Breezer",
+      "Zum Zim",
+      "Takin"
     ]
   },
   "Main Course": {
     "Breakfast": [
-      {"name": "Puri with alu dum", "price": 4, "description": "Fried bread served with spiced potato curry.", "img": "puri.jpg"},
-      {"name": "Puri with ema datshi", "price": 4, "description": "Fried bread with Bhutanese chili cheese.", "img": "puriemadatshi.jpg"},
-      {"name": "Puri with mix veg", "price": 4, "description": "Fried bread with mixed vegetables.", "img": "purimixveg.jpg"},
-      {"name": "Puri with chana mottor", "price": 4, "description": "Fried bread with chickpea curry.", "img": "purichana.jpg"},
-      {"name": "Chicken fried rice", "price": 6, "description": "Stir-fried rice with chicken.", "img": "chickenfriedrice.jpg"},
-      {"name": "Veg. fried rice", "price": 5, "description": "Stir-fried rice with vegetables.", "img": "vegfriedrice.jpg"},
-      {"name": "Pork fried rice", "price": 6, "description": "Stir-fried rice with pork.", "img": "porkfriedrice.jpg"},
-      {"name": "Beef fried rice", "price": 6, "description": "Stir-fried rice with beef.", "img": "beeffriedrice.jpg"},
-      {"name": "Egg fried rice", "price": 5, "description": "Stir-fried rice with egg.", "img": "eggfriedrice.jpg"},
-      {"name": "Suka roti", "price": 3, "description": "Traditional Bhutanese bread.", "img": "sukaroti.jpg"},
-      {"name": "Sel roti", "price": 3, "description": "Nepali rice flour doughnut.", "img": "selroti.jpg"}
+      "Puri with alu dum",
+      "Puri with ema datshi",
+      "Puri with mix veg",
+      "Puri with chana mottor",
+      "Chicken fried rice",
+      "Veg. fried rice",
+      "Pork fried rice",
+      "Beef fried rice",
+      "Egg fried rice",
+      "Suka roti",
+      "Sel roti"
     ],
-    "Lunch": [
-      {"name": "Chicken Curry", "price": 7, "description": "Traditional Bhutanese chicken curry.", "img": "chickencurry.jpg"},
-      {"name": "Pork Curry", "price": 7, "description": "Rich pork curry with spices.", "img": "porkcurry.jpg"},
-      {"name": "Beef Curry", "price": 7, "description": "Tender beef curry.", "img": "beefcurry.jpg"},
-      {"name": "Mix veg.", "price": 5, "description": "Mixed vegetable curry.", "img": "mixveg.jpg"},
-      {"name": "Fish Curry", "price": 7, "description": "Spicy fish curry.", "img": "fishcurry.jpg"},
-      {"name": "Pork Chilli", "price": 6, "description": "Spicy pork stir-fry.", "img": "porkchilli.jpg"},
-      {"name": "Beef Chilli", "price": 6, "description": "Spicy beef stir-fry.", "img": "beefchilli.jpg"},
-      {"name": "Chicken Chilli", "price": 6, "description": "Spicy chicken stir-fry.", "img": "chickenchilli.jpg"},
-      {"name": "Mushroom", "price": 5, "description": "Sautéed mushrooms.", "img": "mushroom.jpg"},
-      {"name": "Paneer", "price": 5, "description": "Indian cottage cheese curry.", "img": "paneer.jpg"},
-      {"name": "Ema Datshi", "price": 5, "description": "Bhutan's national dish: chili and cheese.", "img": "emadatshi.jpg"}
+    "Lunch & Dinner": [
+      "Chicken Curry",
+      "Pork Curry",
+      "Beef Curry",
+      "Mix veg.",
+      "Fish Curry",
+      "Pork Chilli",
+      "Beef Chilli",
+      "Chicken Chilli",
+      "Mushroom",
+      "Paneer",
+      "Ema Datshi"
     ]
   },
-  "Snacks": {
-    "Snacks": [
-      {"name": "Pork Chilli", "price": 5, "description": "Spicy pork stir-fry.", "img": "porkchilli.jpg"},
-      {"name": "Beef Chilli", "price": 5, "description": "Spicy beef stir-fry.", "img": "beefchilli.jpg"},
-      {"name": "Chicken Chilli", "price": 5, "description": "Spicy chicken stir-fry.", "img": "chickenchilli.jpg"},
-      {"name": "Fish Fry", "price": 5, "description": "Crispy fried fish.", "img": "fishfry.jpg"},
-      {"name": "French Fry", "price": 3, "description": "Crispy potato fries.", "img": "fries.jpg"},
-      {"name": "Chicken Drumstick (KFC)", "price": 6, "description": "Crispy fried chicken drumsticks.", "img": "drumstick.jpg"},
-      {"name": "Sel Roti", "price": 3, "description": "Nepali rice flour doughnut.", "img": "selroti.jpg"}
+  "Nepali Thali": {
+    "Veg": [
+      "Paneer Thali",
+      "Mix veg. Thali",
+      "EmaDatshi Thali",
+      "Mushroom Dathsi Thali"
+    ],
+    "NonVeg": [
+      "Chicken Thali",
+      "Beef Thali",
+      "Pork Thali",
+      "Fish Thali"
     ]
+  },
+  "Chinese Dish":{
+    "Chinese":[
+    "Chicken Chowmein",
+    "Pork Chowmein",
+    "Beef Chowmein",
+    "Veg. Chowmein",
+    "Egg Chowmein",
+    "Cheese Momo",
+    "Beef Momo",
+    "Egg thukpa",
+    "Beef thukpa",
+    "Veg. thukpa",
+    "Pork thukpa",
+    "Chicken thukpa",
+    "Koka (Veg./Non-veg)"
+  ]
+  } ,
+  "Snacks":{
+     "Snacks": [
+    "Pork Chilli",
+    "Beef Chilli",
+    "Chicken Chilli",
+    "Fish Fry",
+    "French Fry",
+    "Chicken Drumstick (KFC)",
+    "Sel Roti"
+  ]
+  },
+  "Samyang Noodles": {
+    "Type": [
+      "Veg",
+      "Non-Veg"
+    ],
+    "Flavors": [
+      "Pink",
+      "Green",
+      "2X Red",
+      "Black",
+      "Yellow",
+      "Kimchi",
+      "Yugaejang",
+      "Sutha"
+    ]
+  },
+  "Speciality":{
+    "Speciality":  [
+    "Alu Dum",
+    "Omlet",
+    "Egg Pouch",
+    "Pani Puri",
+    "Samosa"
+  ]
   },
   "Tea": {
-    "Tea": [
-      {"name": "Milk Tea", "price": 2, "description": "Classic milk tea, sweet and comforting.", "img": "milktea.jpg"},
-      {"name": "Black Tea", "price": 2, "description": "Strong black tea.", "img": "blacktea.jpg"},
-      {"name": "Lemon Tea", "price": 2.5, "description": "Refreshing lemon tea.", "img": "lemontea.jpg"},
-      {"name": "Green Tea", "price": 2.5, "description": "Healthy green tea.", "img": "greentea.jpg"},
-      {"name": "Milk Coffee", "price": 2.5, "description": "Coffee with milk.", "img": "milkcoffee.jpg"},
-      {"name": "Black Coffee", "price": 2.5, "description": "Strong black coffee.", "img": "blackcoffee.jpg"},
-      {"name": "Suja (Mac tea)", "price": 2.5, "description": "Bhutanese butter tea.", "img": "suja.jpg"},
-      {"name": "Ginger Honey Tea", "price": 2.5, "description": "Soothing ginger and honey tea.", "img": "gingerhoneytea.jpg"}
-    ]
+    "Tea":[
+    "Milk Tea",
+    "Black Tea",
+    "Lemon Tea",
+    "Green Tea",
+    "Milk Coffee",
+    "Black Coffee",
+    "Suja (Mac tea)",
+    "Ginger Honey Tea"
+  ]
   }
 }
