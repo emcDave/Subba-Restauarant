@@ -88,7 +88,7 @@ const App: React.FC = () => {
           <div className="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-4 mx-2 sm:mx-4 pb-8">
             <div className="space-y-2 sm:space-y-4 relative min-h-[200px] sm:min-h-[600px]">
               {/* Mobile Title */}
-              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden">
+              <div className="bg-gradient-to-r from-[#065F46]  to-[#047857] rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden">
                 <h3 className="text-white text-center text-[14px]">
                   Breakfast
                 </h3>
@@ -153,7 +153,7 @@ const App: React.FC = () => {
             </div>
             <div className="space-y-2 sm:space-y-4 relative col-span-1 sm:col-span-1  mt-6 sm:mt-0">
               {/* Mobile Title */}
-              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-1 sm:mb-2 sm:hidden">
+              <div className="bg-gradient-to-r from-[#065F46]  to-[#047857] rounded-md py-2 sm:py-3 w-full mb-1 sm:mb-2 sm:hidden">
                 <h3 className="text-white text-center text-[14px]">
                   Main Course
                 </h3>
