@@ -86,13 +86,16 @@ const App: React.FC = () => {
 
           {/* Food Menu */}
           <div className="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-4 mx-2 sm:mx-4 pb-8">
-            <div className="space-y-2 sm:space-y-4 relative min-h-[200px] sm:min-h-[600px]">
+            <div className="bg-gradient-to-r from-[#065F46]  col-span-2 to-[#047857] rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden h-[60px] sm:h-[150px]  flex justify-center items-center">
+              <h3 className="text-white text-center text-[18px]">Breakfast</h3>
+            </div>
+            <div className="space-y-2 sm:space-y-4 relative min-h-[200px] sm:min-h-[600px] px-3 sm:px-0">
               {/* Mobile Title */}
-              <div className="bg-gradient-to-r from-[#065F46]  to-[#047857] rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden">
+              {/* <div className="bg-gradient-to-r from-[#065F46]  to-[#047857] rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden">
                 <h3 className="text-white text-center text-[14px]">
                   Breakfast
                 </h3>
-              </div>
+              </div> */}
               {breakfast.map((item: string, index: number) => (
                 <div key={index} className="">
                   <h4 className="font-semibold text-[10px] sm:text-[18px] text-gray-800">
@@ -151,13 +154,14 @@ const App: React.FC = () => {
                 />
               </div>
             </div>
-            <div className="space-y-2 sm:space-y-4 relative col-span-1 sm:col-span-1  mt-6 sm:mt-0">
+            <div className="bg-gradient-to-r from-[#065F46]  to-[#047857] col-span-2 rounded-md py-2 sm:py-3 w-full mt-3 sm:my-2 sm:hidden h-[60px] sm:h-[150px]  flex justify-center items-center">
+              <h3 className="text-white text-center text-[18px]">
+                Main Course
+              </h3>
+            </div>
+            <div className="space-y-2 sm:space-y-4 relative col-span-1 sm:col-span-1  mt-6 sm:mt-0 px-3 sm:px-0">
               {/* Mobile Title */}
-              <div className="bg-gradient-to-r from-[#065F46]  to-[#047857] rounded-md py-2 sm:py-3 w-full mb-1 sm:mb-2 sm:hidden">
-                <h3 className="text-white text-center text-[14px]">
-                  Main Course
-                </h3>
-              </div>
+
               {lunchDinner.map((item: string, index: number) => (
                 <div key={index} className="">
                   <h4 className="font-semibold text-[10px] sm:text-[18px] text-gray-800">
@@ -243,7 +247,7 @@ const App: React.FC = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-gray-800 text-center">
+                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-gray-800 text-center max-w-[90px] sm:max-w-[200px] ">
                       {item}
                     </h4>
                   </div>
