@@ -101,8 +101,9 @@
     "Chicken Chilli",
     "Fish Fry",
     "French Fry",
-    "Chicken Drumstick (KFC)",
-    "Sel Roti"
+    "Omlet",
+    "Egg Pouch"
+   
   ]
   },
   "Samyang Noodles": {
@@ -124,8 +125,8 @@
   "Speciality":{
     "Speciality":  [
     "Alu Dum",
-    "Omlet",
-    "Egg Pouch",
+     "Chicken Drumstick (KFC)",
+    "Sel Roti",
     "Pani Puri",
     "Samosa"
   ]

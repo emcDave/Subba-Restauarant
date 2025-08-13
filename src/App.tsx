@@ -31,14 +31,14 @@ const App: React.FC = () => {
     <div>
       <main className="">
         <div className="flex flex-col gap-[16px] m-[6%] bg-[#312F30] h-full rounded-2xl p-[5%] relative mt-[8%] mb-[0%]">
-          <div className="bg-gradient-to-r from-[#FFAE01] to-[#E96B00] p-[20px] py-[3%] sm:py-[1%] rounded-2xl absolute top-[-30px] left-0 sm:top-[-80px] sm:left-20 w-[100%] sm:w-[85%] flex justify-center items-center">
-            <h1 className="text-[14px] sm:text-[80px] text-white">Food Menu</h1>
+          <div className="bg-gradient-to-r from-[#065F46] to-[#047857]  p-[20px] py-[3%] sm:py-[1%] rounded-2xl absolute top-[-30px] left-0 sm:top-[-80px] sm:left-20 w-[100%] sm:w-[85%] flex justify-center items-center">
+            <h1 className="text-[20px] sm:text-[80px] text-white">Food Menu</h1>
           </div>
           <div className="w-full flex flex-col gap-[10px] mt-[6%] justify-center items-center relative h-[450px] sm:h-[650px]">
-            <h1 className="text-[14px] sm:text-[34px] z-10 font-semibold text-white text-center">
+            <h1 className="text-[18px] sm:text-[34px] z-10 font-semibold text-white text-center">
               Subba Restaurant
             </h1>
-            <h1 className="text-[12px] sm:text-[20px] z-10 text-white/60">
+            <h1 className="text-[14px] sm:text-[20px] z-10 text-white/60">
               since 2000
             </h1>
 
@@ -49,7 +49,7 @@ const App: React.FC = () => {
                 className="w-[200px] sm:w-[300px] h-[200px] sm:h-[300px] rounded-full object-cover"
               />
             </div>
-            <h1 className="text-[12px] sm:text-[20px] z-10 text-white/70">
+            <h1 className="text-[14px] sm:text-[20px] z-10 text-white/70">
               77861149 / 77626862
             </h1>
 
@@ -68,32 +68,28 @@ const App: React.FC = () => {
 
         <div className="m-[3%] sm:m-[5%]">
           {/* Food Sections */}
-          <div className=" bg-gradient-to-r from-[#FFAE01] to-[#E96B00] p-[20px] py-[1%] rounded-2xl h-[50px] sm:h-[150px] flex justify-center items-center">
-            <h1 className="text-[14px] sm:text-[50px] text-white">
-              Main Course
-            </h1>
-          </div>
+
           {/* Desktop/Web Titles */}
           <div className="grid grid-cols-2 gap-2 mx-4 mb-4 mt-[5%] hidden sm:grid">
             <div className="rounded-lg py-3 bg-[#312F30] w-[90%]">
-              <h3 className="text-white text-center text-[14px] sm:text-[30px]">
+              <h3 className="text-white text-center text-[16px] sm:text-[30px]">
                 Breakfast
               </h3>
             </div>
             <div className="rounded-lg py-3 bg-[#312F30] w-[100%]">
-              <h3 className="text-white text-center text-[14px] sm:text-[30px]">
-                Lunch & Dinner
+              <h3 className="text-white text-center text-[16px] sm:text-[30px]">
+                Main Course
               </h3>
             </div>
             <div></div>
           </div>
 
           {/* Food Menu */}
-          <div className="grid grid-cols-3 sm:grid-cols-2 gap-2 sm:gap-4 mx-2 sm:mx-4 pb-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-4 mx-2 sm:mx-4 pb-8">
             <div className="space-y-2 sm:space-y-4 relative min-h-[200px] sm:min-h-[600px]">
               {/* Mobile Title */}
               <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden">
-                <h3 className="text-white text-center text-[12px]">
+                <h3 className="text-white text-center text-[14px]">
                   Breakfast
                 </h3>
               </div>
@@ -110,11 +106,56 @@ const App: React.FC = () => {
                 className="hidden sm:block w-[80px] sm:w-[300px] h-[50px] sm:h-[220px] rounded-[12px] absolute right-[-20px] sm:right-20 top-[120px] sm:top-40"
               />
             </div>
+            <div className="w-full h-full flex justify-center items-end sm:hidden">
+              <div className="grid grid-cols-2 gap-2">
+                <img
+                  src="/restaurant_icon_33.jpg"
+                  alt="Restaurant Icon 1"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_icon_34.jpg"
+                  alt="Restaurant Icon 2"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_icon_35.jpg"
+                  alt="Restaurant Food 1"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_icon_36.jpg"
+                  alt="Restaurant Food 2"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+
+                <img
+                  src="/restaurant_icon_38.jpg"
+                  alt="Restaurant Food 2"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_icon_39.jpg"
+                  alt="Restaurant Food 2"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_icon_40.jpg"
+                  alt="Restaurant Food 2"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_icon_41.jpg"
+                  alt="Restaurant Food 2"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+              </div>
+            </div>
             <div className="space-y-2 sm:space-y-4 relative col-span-1 sm:col-span-1  mt-6 sm:mt-0">
               {/* Mobile Title */}
               <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-1 sm:mb-2 sm:hidden">
-                <h3 className="text-white text-center text-[12px]">
-                  Lunch & Dinner
+                <h3 className="text-white text-center text-[14px]">
+                  Main Course
                 </h3>
               </div>
               {lunchDinner.map((item: string, index: number) => (
@@ -130,26 +171,11 @@ const App: React.FC = () => {
                 className="hidden sm:block w-[80px] sm:w-[300px] rounded-[12px] absolute right-0 sm:right-5 top-[80px] sm:top-20"
               />
             </div>
-            <div className="w-full h-full flex justify-center items-center sm:hidden">
+            <div className="w-full h-full flex justify-center items-end sm:hidden">
               <div className="grid grid-cols-2 gap-2">
                 <img
-                  src="/restaurant_icon_1.jpg"
+                  src="/restaurant_icon_23.jpg"
                   alt="Restaurant Icon 1"
-                  className="w-full h-[60px] rounded-lg object-cover"
-                />
-                <img
-                  src="/restaurant_icon_2.jpg"
-                  alt="Restaurant Icon 2"
-                  className="w-full h-[60px] rounded-lg object-cover"
-                />
-                <img
-                  src="/restaurant_food_1.jpg"
-                  alt="Restaurant Food 1"
-                  className="w-full h-[60px] rounded-lg object-cover"
-                />
-                <img
-                  src="/puri.png"
-                  alt="Restaurant Food 2"
                   className="w-full h-[60px] rounded-lg object-cover"
                 />
                 <img
@@ -162,30 +188,55 @@ const App: React.FC = () => {
                   alt="Restaurant Food 3"
                   className="w-full h-[60px] rounded-lg object-cover"
                 />
+                <img
+                  src="/restaurant_icon_22.jpg"
+                  alt="Restaurant Icon 2"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/sp1.jpg"
+                  alt="Restaurant Food 1"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_icon_27.jpg"
+                  alt="Restaurant Food 2"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_food_12.jpg"
+                  alt="Restaurant Icon 3"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_food_11.jpg"
+                  alt="Restaurant Food 3"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
               </div>
             </div>
           </div>
 
           {/* Nepali Thali Section */}
 
-          <div className="my-[5%] bg-gradient-to-r from-[#FFAE01] relative to-[#E96B00] p-[10px] py-[1%] rounded-2xl h-[60px] sm:h-[150px]  flex justify-center items-center">
-            <h1 className="text-[14px] sm:text-[50px] text-bold text-white z-20">
+          <div className="my-[5%] bg-gradient-to-r from-[#065F46] relative to-[#047857] p-[10px] py-[1%] rounded-2xl h-[60px] sm:h-[150px]  flex justify-center items-center">
+            <h1 className="text-[18px] sm:text-[50px] text-bold text-white z-20">
               Nepali Thali
             </h1>
           </div>
 
           {/* Nepali Thali Menu */}
-          <div className="w-full mx-2 sm:mx-4 pb-8 flex flex-col sm:flex-row gap-2 sm:gap-4">
+          <div className="w-full mx-2 sm:mx-4 pb-8 flex flex-col sm:flex-row gap-2 sm:gap-4 ">
             <div className="space-y-2 sm:space-y-8 relative w-full">
-              <div className="bg-[#312F30] rounded-lg py-2 sm:py-3 w-full mb-2 sm:mb-4">
-                <h3 className="text-white text-center text-[12px] sm:text-[30px]">
+              <div className="bg-[#312F30] rounded-lg py-2 sm:py-3 w-[95%] mb-2 sm:mb-4">
+                <h3 className="text-white text-center text-[14px] sm:text-[30px]">
                   Vegetarian Thali
                 </h3>
               </div>
               <div className="flex flex-wrap gap-3 sm:gap-6 justify-center ">
                 {nepalThaliVeg.map((item: string, index: number) => (
                   <div key={index} className="text-center flex-shrink-0">
-                    <div className="w-16 h-16 sm:w-[150px] sm:h-[150px] mt-2 sm:mt-[30px] mx-auto mb-2 sm:mb-3 rounded-full border-2 border-[#FFAE01] overflow-hidden">
+                    <div className="w-16 h-16 sm:w-[150px] sm:h-[150px] mt-2 sm:mt-[30px] mx-auto mb-2 sm:mb-3 rounded-full border-2 border-[#065F46] overflow-hidden">
                       <img
                         src={`/nepal_${index + 1}.png`}
                         alt={item}
@@ -200,15 +251,15 @@ const App: React.FC = () => {
               </div>
             </div>
             <div className="space-y-2 sm:space-y-8 relative w-full mt-6 sm:mt-0">
-              <div className="bg-[#312F30] rounded-lg py-2 sm:py-3 w-full mb-2 sm:mb-4">
-                <h3 className="text-white text-center text-[12px] sm:text-[30px]">
+              <div className="bg-[#312F30] rounded-lg py-2 sm:py-3 w-[95%] mb-2 sm:mb-4">
+                <h3 className="text-white text-center text-[14px] sm:text-[30px]">
                   Non-Vegetarian Thali
                 </h3>
               </div>
               <div className="flex flex-wrap gap-3 sm:gap-6 justify-center ">
                 {nepalThali.map((item: string, index: number) => (
                   <div key={index} className="text-center flex-shrink-0">
-                    <div className="w-16 h-16 sm:w-[150px] sm:h-[150px] mt-2 sm:mt-[30px] mx-auto mb-2 sm:mb-3 rounded-full border-2 border-[#FFAE01] overflow-hidden">
+                    <div className="w-16 h-16 sm:w-[150px] sm:h-[150px] mt-2 sm:mt-[30px] mx-auto mb-2 sm:mb-3 rounded-full border-2 border-[#065F46] overflow-hidden">
                       <img
                         src={`/nepalN_${index + 1}.jpg`}
                         alt={item}
@@ -226,8 +277,8 @@ const App: React.FC = () => {
 
           {/* Snacks Sections */}
 
-          <div className="my-[5%] bg-gradient-to-r from-[#FFAE01] relative to-[#E96B00] p-[10px] py-[1%] rounded-2xl h-[60px] sm:h-[150px]  flex justify-center items-center">
-            <h1 className="text-[14px] sm:text-[50px] text-bold text-white z-20">
+          <div className="my-[5%] bg-gradient-to-r from-[#065F46] relative to-[#047857] p-[10px] py-[1%] rounded-2xl h-[60px] sm:h-[150px]  flex justify-center items-center">
+            <h1 className="text-[18px] sm:text-[50px] text-bold text-white z-20">
               Snacks & Tea
             </h1>
           </div>
@@ -246,11 +297,11 @@ const App: React.FC = () => {
           </div>
 
           {/* Snacks Menu */}
-          <div className="grid grid-cols-3 sm:grid-cols-2 gap-2 sm:gap-4 mx-2 sm:mx-4 mb-4">
+          <div className="grid grid-cols-2 gap-2 sm:gap-4 mx-2 sm:mx-4 mb-4">
             <div className="space-y-2 sm:space-y-4 relative col-span-1 sm:col-span-1 min-h-auto sm:min-h-[460px]">
               {/* Mobile Title */}
               <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden">
-                <h3 className="text-white text-center text-[12px]">Snacks</h3>
+                <h3 className="text-white text-center text-[14px]">Snacks</h3>
               </div>
               {snacksItems.map((item: string, index: number) => (
                 <div key={index} className="">
@@ -265,10 +316,45 @@ const App: React.FC = () => {
                 className="hidden sm:block w-[80px] sm:w-[200px] h-[50px] sm:h-[380px] rounded-[12px] absolute right-[-20px] sm:right-[20%] top-[120px] sm:top-10"
               />
             </div>
+            <div className="w-full h-full flex justify-center items-end sm:hidden">
+              <div className="grid grid-cols-2 gap-2">
+                <img
+                  src="/restaurant_icon_28.jpg"
+                  alt="Restaurant Icon 4"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_icon_26.jpg"
+                  alt="Restaurant Icon 5"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_food_4.jpg"
+                  alt="Restaurant Food 4"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/restaurant_food_5.jpg"
+                  alt="Restaurant Food 5"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+
+                <img
+                  src="/restaurant_food_6.jpg"
+                  alt="Restaurant Food 6"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/omala.jpg"
+                  alt="Restaurant Icon 6"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+              </div>
+            </div>
             <div className="space-y-2 sm:space-y-4 relative col-span-1 sm:col-span-1 mt-6 sm:mt-0">
               {/* Mobile Title */}
               <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-1 sm:mb-2 sm:hidden mt-auto sm:mt-[16px]">
-                <h3 className="text-white text-center text-[12px]">
+                <h3 className="text-white text-center text-[14px]">
                   Tea & Coffee
                 </h3>
               </div>
@@ -285,7 +371,7 @@ const App: React.FC = () => {
                 className="hidden sm:block w-[80px] sm:w-[250px] h-[50px] sm:h-[380px] rounded-[12px] absolute right-[-20px] sm:right-20 top-[80px] sm:top-10"
               />
             </div>
-            <div className="w-full h-full flex justify-center items-center sm:hidden">
+            <div className="w-full h-full flex justify-center items-end sm:hidden">
               <div className="grid grid-cols-2 gap-2">
                 <img
                   src="/restaurant_icon_4.jpg"
@@ -298,12 +384,12 @@ const App: React.FC = () => {
                   className="w-full h-[60px] rounded-lg object-cover"
                 />
                 <img
-                  src="/restaurant_food_4.jpg"
+                  src="/restaurant_icon_3.jpg"
                   alt="Restaurant Food 4"
                   className="w-full h-[60px] rounded-lg object-cover"
                 />
                 <img
-                  src="/restaurant_food_5.jpg"
+                  src="/restaurant_icon_11.jpg"
                   alt="Restaurant Food 5"
                   className="w-full h-[60px] rounded-lg object-cover"
                 />
@@ -313,7 +399,7 @@ const App: React.FC = () => {
                   className="w-full h-[60px] rounded-lg object-cover"
                 />
                 <img
-                  src="/restaurant_food_6.jpg"
+                  src="/restaurant_icon_12.jpg"
                   alt="Restaurant Food 6"
                   className="w-full h-[60px] rounded-lg object-cover"
                 />
@@ -322,17 +408,17 @@ const App: React.FC = () => {
           </div>
 
           {/* Chinese Section */}
-          <div className="w-full mx-2 sm:mx-4 mb-4 mt-2 sm:mt-[5%]">
+          <div className="w-full mx-2 sm:mx-4 mb-4 mt-10 sm:mt-[5%]">
             <div className="space-y-2 sm:space-y-4 relative w-full">
               <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4">
-                <h3 className="text-white text-center text-[12px] sm:text-[30px]">
-                  Chinese
+                <h3 className="text-white text-center text-[18px] sm:text-[30px]">
+                  Chinese Dishes
                 </h3>
               </div>
               <div className="flex flex-wrap gap-3 sm:gap-6 justify-center">
                 {chinese.map((item: string, index: number) => (
                   <div key={index} className="text-center flex-shrink-0">
-                    <div className="w-16 h-16 sm:w-[150px] sm:h-[150px] mt-2 sm:mt-[30px] mx-auto mb-2 sm:mb-3 rounded-full border-2 border-[#FFAE01] overflow-hidden">
+                    <div className="w-16 h-16 sm:w-[150px] sm:h-[150px] mt-2 sm:mt-[30px] mx-auto mb-2 sm:mb-3 rounded-full border-2 border-[#065F46] overflow-hidden">
                       <img
                         src={`/c${index + 1}.jpg`}
                         alt={item}
@@ -352,14 +438,14 @@ const App: React.FC = () => {
           <div className="w-full mx-2 sm:mx-4 mb-4 mt-2 sm:mt-[5%]">
             <div className="space-y-2 sm:space-y-4 relative w-full">
               <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4">
-                <h3 className="text-white text-center text-[12px] sm:text-[30px]">
+                <h3 className="text-white text-center text-[18px] sm:text-[30px]">
                   Samyang Noodles( Veg / NonVeg)
                 </h3>
               </div>
               <div className="flex flex-wrap gap-3 sm:gap-6 justify-center ">
                 {samyangFlavors.map((item: string, index: number) => (
                   <div key={index} className="text-center flex-shrink-0">
-                    <div className="w-16 h-16 sm:w-[150px] sm:h-[150px] mt-2 sm:mt-[30px] mx-auto mb-2 sm:mb-3 rounded-full border-2 border-[#FFAE01] overflow-hidden">
+                    <div className="w-16 h-16 sm:w-[150px] sm:h-[150px] mt-2 sm:mt-[30px] mx-auto mb-2 sm:mb-3 rounded-full border-2 border-[#065F46] overflow-hidden">
                       <img
                         src={`/s${index + 1}.png`}
                         alt={item}
@@ -379,14 +465,14 @@ const App: React.FC = () => {
           <div className="w-full mx-2 sm:mx-4 mb-4 mt-2 sm:mt-[5%]">
             <div className="space-y-2 sm:space-y-4 relative w-full">
               <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4">
-                <h3 className="text-white text-center text-[12px] sm:text-[30px]">
+                <h3 className="text-white text-center text-[18px] sm:text-[30px]">
                   Speciality Items
                 </h3>
               </div>
               <div className="flex flex-wrap gap-3 sm:gap-6 justify-center ">
                 {speciality.map((item: string, index: number) => (
                   <div key={index} className="text-center flex-shrink-0">
-                    <div className="w-16 h-16 sm:w-[150px] sm:h-[150px] mt-2 sm:mt-[30px] mx-auto mb-2 sm:mb-3 rounded-full border-2 border-[#FFAE01] overflow-hidden">
+                    <div className="w-16 h-16 sm:w-[150px] sm:h-[150px] mt-2 sm:mt-[30px] mx-auto mb-2 sm:mb-3 rounded-full border-2 border-[#065F46] overflow-hidden">
                       <img
                         src={`/sp${index + 1}.jpg`}
                         alt={item}
@@ -402,19 +488,19 @@ const App: React.FC = () => {
             </div>
           </div>
 
-          <div className="my-[5%] bg-gradient-to-r from-[#FFAE01] relative to-[#E96B00] p-[10px] py-[1%] rounded-2xl h-[60px] sm:h-[150px] flex justify-center items-center">
-            <h1 className="text-[14px] sm:text-[50px] text-bold text-white z-20">
+          <div className="my-[5%] bg-gradient-to-r from-[#065F46] relative to-[#047857] p-[10px] py-[1%] rounded-2xl h-[60px] sm:h-[150px] flex justify-center items-center">
+            <h1 className="text-[18px] sm:text-[50px] text-bold text-white z-20">
               Alcoholic Beverages
             </h1>
             <img
               src="/al1.png"
               alt="Alcohol 1"
-              className="h-[30px] sm:h-auto w-auto sm:w-[300px] rounded-[12px] absolute left-2 sm:left-5 bottom-2 sm:bottom-0"
+              className="h-[25px] sm:h-auto w-auto sm:w-[300px] rounded-[12px] absolute left-2 sm:left-5 bottom-2 sm:bottom-0"
             />
             <img
               src="/al2.png"
               alt="Alcohol 2"
-              className="h-[30px] sm:h-auto w-auto sm:w-[300px] rounded-[12px] absolute right-2 sm:right-5 bottom-2 sm:bottom-0"
+              className="h-[25px] sm:h-auto w-auto sm:w-[300px] rounded-[12px] absolute right-2 sm:right-5 bottom-2 sm:bottom-0"
             />
           </div>
 
@@ -438,7 +524,7 @@ const App: React.FC = () => {
             <div className="space-y-2 sm:space-y-4 relative col-span-1">
               {/* Mobile Title */}
               <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden">
-                <h3 className="text-white text-center text-[12px]">Whiskey</h3>
+                <h3 className="text-white text-center text-[14px]">Whiskey</h3>
               </div>
               {drinksItems.whiskey.map((item: string, index: number) => (
                 <div key={index} className="">
@@ -451,7 +537,7 @@ const App: React.FC = () => {
             <div className="space-y-2 sm:space-y-4 relative col-span-1 sm:col-span-1 mt-6 sm:mt-0">
               {/* Mobile Title */}
               <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-1 sm:mb-2 sm:hidden">
-                <h3 className="text-white text-center text-[12px]">
+                <h3 className="text-white text-center text-[14px]">
                   Beer & Wine
                 </h3>
               </div>
@@ -469,7 +555,7 @@ const App: React.FC = () => {
               </div>
               {/* Mobile Title for Wine */}
               <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-1 sm:mb-2 sm:hidden mt-6">
-                <h3 className="text-white text-center text-[12px]">Wine</h3>
+                <h3 className="text-white text-center text-[14px]">Wine</h3>
               </div>
               {drinksItems.wine.map((item: string, index: number) => (
                 <div key={index} className="">
@@ -482,7 +568,7 @@ const App: React.FC = () => {
             <div className="w-full h-full flex justify-center items-center sm:hidden">
               <div className="grid grid-cols-2 gap-2">
                 <img
-                  src="/restaurant_icon_47.jpg"
+                  src="/redPanda.jpg"
                   alt="Restaurant Icon 11"
                   className="w-full h-[60px] rounded-lg object-cover"
                 />
@@ -497,7 +583,7 @@ const App: React.FC = () => {
                   className="w-full h-[60px] rounded-lg object-cover"
                 />
                 <img
-                  src="/sonfy.jpg"
+                  src="/lager.jpg"
                   alt="Restaurant Food 10"
                   className="w-full h-[60px] rounded-lg object-cover"
                 />
@@ -508,6 +594,26 @@ const App: React.FC = () => {
                 />
                 <img
                   src="/redLabel.jpg"
+                  alt="Restaurant Food 11"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/lagerbottle.jpg"
+                  alt="Restaurant Food 9"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/11000.jpg"
+                  alt="Restaurant Food 10"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/soju.jpeg"
+                  alt="Restaurant Icon 13"
+                  className="w-full h-[60px] rounded-lg object-cover"
+                />
+                <img
+                  src="/highland.jpeg"
                   alt="Restaurant Food 11"
                   className="w-full h-[60px] rounded-lg object-cover"
                 />
