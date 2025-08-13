@@ -410,8 +410,8 @@ const App: React.FC = () => {
           {/* Chinese Section */}
           <div className="w-full mx-2 sm:mx-4 mb-4 mt-10 sm:mt-[5%]">
             <div className="space-y-2 sm:space-y-4 relative w-full">
-              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4">
-                <h3 className="text-white text-center text-[18px] sm:text-[30px]">
+              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4 w-[95%] sm:w-[100%]">
+                <h3 className="text-white text-center text-[18px] sm:text-[30px] ">
                   Chinese Dishes
                 </h3>
               </div>
@@ -437,7 +437,7 @@ const App: React.FC = () => {
           {/* Samyang Noodles Section */}
           <div className="w-full mx-2 sm:mx-4 mb-4 mt-2 sm:mt-[5%]">
             <div className="space-y-2 sm:space-y-4 relative w-full">
-              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4">
+              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4 w-[95%] sm:w-[100%]">
                 <h3 className="text-white text-center text-[18px] sm:text-[30px]">
                   Samyang Noodles( Veg / NonVeg)
                 </h3>
@@ -464,7 +464,7 @@ const App: React.FC = () => {
           {/* Speciality Section */}
           <div className="w-full mx-2 sm:mx-4 mb-4 mt-2 sm:mt-[5%]">
             <div className="space-y-2 sm:space-y-4 relative w-full">
-              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4">
+              <div className="bg-[#312F30] rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4 w-[95%] sm:w-[100%]">
                 <h3 className="text-white text-center text-[18px] sm:text-[30px]">
                   Speciality Items
                 </h3>
