@@ -415,7 +415,7 @@ const App: React.FC = () => {
                   Chinese Dishes
                 </h3>
               </div>
-              <div className="flex flex-wrap gap-3 sm:gap-6 justify-center">
+              <div className="flex flex-wrap gap-3 sm:gap-6 justify-center w-[95%] sm:w-[100%]">
                 {chinese.map((item: string, index: number) => (
                   <div key={index} className="text-center flex-shrink-0">
                     <div className="w-16 h-16 sm:w-[150px] sm:h-[150px] mt-2 sm:mt-[30px] mx-auto mb-2 sm:mb-3 rounded-full border-2 border-[#065F46] overflow-hidden">
@@ -425,7 +425,7 @@ const App: React.FC = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-gray-800 text-center">
+                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-gray-800 text-center max-w-[90px] sm:max-w-[200px] ">
                       {item}
                     </h4>
                   </div>
@@ -479,7 +479,7 @@ const App: React.FC = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-gray-800 text-center">
+                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-gray-800 text-center max-w-[90px] sm:max-w-[200px] ">
                       {item}
                     </h4>
                   </div>
