@@ -28,9 +28,12 @@ const App: React.FC = () => {
   };
 
   return (
-    <div>
+    <div
+      className="min-h-screen bg-cover bg-center bg-no-repeat pt-[50px] sm:pt-[20px]"
+      style={{ backgroundImage: "url(/bgmain.png)" }}
+    >
       <main className="">
-        <div className="flex flex-col gap-[16px] m-[6%] bg-[#312F30] h-full rounded-2xl p-[5%] relative mt-[8%] mb-[0%]">
+        <div className="flex flex-col gap-[16px] m-[6%] bg-[#312F30]/80 h-full rounded-2xl p-[5%] relative mt-[8%] mb-[0%] ">
           <div className="bg-gradient-to-r from-[#065F46] to-[#047857]  p-[20px] py-[3%] sm:py-[1%] rounded-2xl absolute top-[-30px] left-0 sm:top-[-80px] sm:left-20 w-[100%] sm:w-[85%] flex justify-center items-center">
             <h1 className="text-[20px] sm:text-[80px] text-white">Food Menu</h1>
           </div>
@@ -71,12 +74,12 @@ const App: React.FC = () => {
 
           {/* Desktop/Web Titles */}
           <div className="grid grid-cols-2 gap-2 mx-4 mb-4 mt-[5%] hidden sm:grid">
-            <div className="rounded-lg py-3 bg-[#312F30] w-[90%]">
+            <div className="rounded-lg py-3 bg-gradient-to-r from-[#065F46] to-[#047857] w-[90%]">
               <h3 className="text-white text-center text-[16px] sm:text-[30px]">
                 Breakfast
               </h3>
             </div>
-            <div className="rounded-lg py-3 bg-[#312F30] w-[100%]">
+            <div className="rounded-lg py-3 bg-gradient-to-r from-[#065F46] to-[#047857] w-[100%]">
               <h3 className="text-white text-center text-[16px] sm:text-[30px]">
                 Main Course
               </h3>
@@ -86,7 +89,7 @@ const App: React.FC = () => {
 
           {/* Food Menu */}
           <div className="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-4 mx-2 sm:mx-4 pb-8">
-            <div className="bg-gradient-to-r from-[#065F46]  col-span-2 to-[#047857] rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden h-[60px] sm:h-[150px]  flex justify-center items-center">
+            <div className="bg-gradient-to-r from-[#065F46] to-[#047857]  col-span-2  rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden h-[60px] sm:h-[150px]  flex justify-center items-center">
               <h3 className="text-white text-center text-[18px]">Breakfast</h3>
             </div>
             <div className="space-y-2 sm:space-y-4 relative min-h-[200px] sm:min-h-[600px] px-3 sm:px-0">
@@ -98,7 +101,7 @@ const App: React.FC = () => {
               </div> */}
               {breakfast.map((item: string, index: number) => (
                 <div key={index} className="">
-                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-gray-800">
+                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-white">
                     {item}
                   </h4>
                 </div>
@@ -164,7 +167,7 @@ const App: React.FC = () => {
 
               {lunchDinner.map((item: string, index: number) => (
                 <div key={index} className="">
-                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-gray-800">
+                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-white">
                     {item}
                   </h4>
                 </div>
@@ -247,7 +250,7 @@ const App: React.FC = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-gray-800 text-center max-w-[90px] sm:max-w-[200px] ">
+                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-white text-center max-w-[90px] sm:max-w-[200px] ">
                       {item}
                     </h4>
                   </div>
@@ -270,7 +273,7 @@ const App: React.FC = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-gray-800 text-center">
+                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-white text-center">
                       {item}
                     </h4>
                   </div>
@@ -309,7 +312,7 @@ const App: React.FC = () => {
               </div>
               {snacksItems.map((item: string, index: number) => (
                 <div key={index} className="">
-                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-gray-800 mt-auto sm:nt-[16px]">
+                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-white mt-auto sm:nt-[16px]">
                     {item}
                   </h4>
                 </div>
@@ -364,7 +367,7 @@ const App: React.FC = () => {
               </div>
               {hotDrinksItems.map((item: string, index: number) => (
                 <div key={index} className="">
-                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-gray-800">
+                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-white">
                     {item}
                   </h4>
                 </div>
@@ -429,7 +432,7 @@ const App: React.FC = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-gray-800 text-center max-w-[90px] sm:max-w-[200px] ">
+                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-white text-center max-w-[90px] sm:max-w-[200px] ">
                       {item}
                     </h4>
                   </div>
@@ -456,7 +459,7 @@ const App: React.FC = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-gray-800 text-center">
+                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-white text-center">
                       {item}
                     </h4>
                   </div>
@@ -483,7 +486,7 @@ const App: React.FC = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-gray-800 text-center max-w-[90px] sm:max-w-[200px] ">
+                    <h4 className="font-semibold text-[10px] sm:text-[16px] text-white text-center max-w-[90px] sm:max-w-[200px] ">
                       {item}
                     </h4>
                   </div>
@@ -532,7 +535,7 @@ const App: React.FC = () => {
               </div>
               {drinksItems.whiskey.map((item: string, index: number) => (
                 <div key={index} className="">
-                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-gray-800">
+                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-white">
                     {item}
                   </h4>
                 </div>
@@ -547,7 +550,7 @@ const App: React.FC = () => {
               </div>
               {drinksItems.beer.map((item: string, index: number) => (
                 <div key={index} className="">
-                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-gray-800">
+                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-white">
                     {item}
                   </h4>
                 </div>
@@ -563,7 +566,7 @@ const App: React.FC = () => {
               </div>
               {drinksItems.wine.map((item: string, index: number) => (
                 <div key={index} className="">
-                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-gray-800">
+                  <h4 className="font-semibold text-[10px] sm:text-[18px] text-white">
                     {item}
                   </h4>
                 </div>
@@ -626,7 +629,7 @@ const App: React.FC = () => {
           </div>
         </div>
       </main>
-      <footer className="w-full text-center h-[200px] sm:h-[300px] bg-[#312F30] text-white flex items-center justify-center text-[12px] sm:text-[18px] flex flex-col gap-[8px]">
+      <footer className="w-full text-center h-[200px] sm:h-[300px] bg-[#312F30]/80 text-white flex items-center justify-center text-[12px] sm:text-[18px] flex flex-col gap-[8px]">
         <p>Gongkhar | Jakar | Bumthang</p>
         <p>
           email:{" "}
