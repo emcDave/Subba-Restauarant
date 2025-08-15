@@ -34,7 +34,7 @@ const App: React.FC = () => {
     >
       <main className="">
         <div className="flex flex-col gap-[16px] m-[6%] bg-[#312F30]/80 h-full rounded-2xl p-[5%] relative mt-[8%] mb-[0%] ">
-          <div className="bg-[#FFAA01]  p-[20px] py-[3%] sm:py-[1%] rounded-2xl absolute top-[-30px] left-0 sm:top-[-80px] sm:left-20 w-[100%] sm:w-[85%] flex justify-center items-center">
+          <div className="bg-[#FED230]  p-[20px] py-[3%] sm:py-[1%] rounded-2xl absolute top-[-30px] left-0 sm:top-[-80px] sm:left-20 w-[100%] sm:w-[85%] flex justify-center items-center">
             <h1 className="text-[20px] sm:text-[80px] font-bold text-black">
               Food Menu
             </h1>
@@ -76,12 +76,12 @@ const App: React.FC = () => {
 
           {/* Desktop/Web Titles */}
           <div className="grid grid-cols-2 gap-2 mx-4 mb-4 mt-[5%] hidden sm:grid">
-            <div className="rounded-lg py-3 bg-[#FFAA01] w-[90%]">
+            <div className="rounded-lg py-3 bg-[#FED230] w-[90%]">
               <h3 className="text-black text-center font-bold text-[16px] sm:text-[30px]">
                 Breakfast
               </h3>
             </div>
-            <div className="rounded-lg py-3 bg-[#FFAA01] w-[100%]">
+            <div className="rounded-lg py-3 bg-[#FED230] w-[100%]">
               <h3 className="text-black text-center font-bold text-[16px] sm:text-[30px]">
                 Main Course
               </h3>
@@ -91,7 +91,7 @@ const App: React.FC = () => {
 
           {/* Food Menu */}
           <div className="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-4 mx-2 sm:mx-4 pb-8">
-            <div className="bg-[#FFAA01]  col-span-2  rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden h-[60px] sm:h-[150px]  flex justify-center items-center">
+            <div className="bg-[#FED230]  col-span-2  rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden h-[60px] sm:h-[150px]  flex justify-center items-center">
               <h3 className="text-black text-center font-bold text-[18px]">
                 Breakfast
               </h3>
@@ -161,7 +161,7 @@ const App: React.FC = () => {
                 />
               </div>
             </div>
-            <div className="bg-[#FFAA01] col-span-2 rounded-md py-2 sm:py-3 w-full mt-3 sm:my-2 sm:hidden h-[60px] sm:h-[150px]  flex justify-center items-center">
+            <div className="bg-[#FED230] col-span-2 rounded-md py-2 sm:py-3 w-full mt-3 sm:my-2 sm:hidden h-[60px] sm:h-[150px]  flex justify-center items-center">
               <h3 className="text-black font-bold text-center text-[18px]">
                 Main Course
               </h3>
@@ -230,16 +230,16 @@ const App: React.FC = () => {
 
           {/* Nepali Thali Section */}
 
-          <div className="my-[5%] bg-[#FFAA01]  relative p-[10px] py-[1%] rounded-2xl h-[60px] sm:h-[150px]  flex justify-center items-center">
+          <div className="my-[5%] bg-[#FED230]  relative p-[10px] py-[1%] rounded-2xl h-[60px] sm:h-[150px]  flex justify-center items-center">
             <h1 className="text-[18px] sm:text-[50px] font-bold text-black z-20">
               Nepali Thali
             </h1>
           </div>
 
           {/* Nepali Thali Menu */}
-          <div className="w-full mx-2 sm:mx-4 pb-8 flex flex-col sm:flex-row gap-2 sm:gap-4 ">
+          <div className="w-full mx-2 sm:mx-4  mt-6 sm:mt-0 pb-8 flex flex-col sm:flex-row gap-2 sm:gap-4 ">
             <div className="space-y-2 sm:space-y-8 relative w-full">
-              <div className="bg-[#FFAA01]/80  rounded-lg py-2 sm:py-3 w-[95%] mb-2 sm:mb-4">
+              <div className="bg-[#FED230]/90  rounded-lg py-2 sm:py-3 w-[95%] mb-2 sm:mb-4">
                 <h3 className="text-black font-semibold text-center text-[14px] sm:text-[30px]">
                   Vegetarian Thali
                 </h3>
@@ -262,7 +262,7 @@ const App: React.FC = () => {
               </div>
             </div>
             <div className="space-y-2 sm:space-y-8 relative w-full mt-6 sm:mt-0">
-              <div className="bg-[#FFAA01]/80  rounded-lg py-2 sm:py-3 w-[95%] mb-2 sm:mb-4">
+              <div className="bg-[#FED230]/90  rounded-lg py-2 sm:py-3 w-[95%] mb-2 sm:mb-4">
                 <h3 className="text-black font-semibold text-center text-[14px] sm:text-[30px]">
                   Non-Vegetarian Thali
                 </h3>
@@ -288,19 +288,19 @@ const App: React.FC = () => {
 
           {/* Snacks Sections */}
 
-          <div className="my-[5%] bg-[#FFAA01]  relative  p-[10px] py-[1%] rounded-2xl h-[60px] sm:h-[150px]  flex justify-center items-center">
+          <div className="my-[5%] bg-[#FED230]  relative  p-[10px] py-[1%] rounded-2xl h-[60px] sm:h-[150px]  flex justify-center items-center">
             <h1 className="text-[18px] sm:text-[50px] font-bold text-black z-20">
               Snacks & Tea
             </h1>
           </div>
           {/* Desktop/Web Titles */}
           <div className="grid grid-cols-2 gap-2 mx-4 mb-4 hidden sm:grid">
-            <div className="bg-[#FFAA01]/80  rounded-lg py-3 w-[90%]">
+            <div className="bg-[#FED230]/80  rounded-lg py-3 w-[90%]">
               <h3 className="text-black font-semibold text-center text-[14px] sm:text-[30px]">
                 Snacks
               </h3>
             </div>
-            <div className="bg-[#FFAA01]/80 rounded-lg py-3 w-[100%]">
+            <div className="bg-[#FED230]/80 rounded-lg py-3 w-[100%]">
               <h3 className="text-black font-semibold text-center text-[14px] sm:text-[30px]">
                 Tea & Coffee
               </h3>
@@ -311,7 +311,7 @@ const App: React.FC = () => {
           <div className="grid grid-cols-2 gap-2 sm:gap-4 mx-2 sm:mx-4 mb-4">
             <div className="space-y-2 sm:space-y-4 relative col-span-1 sm:col-span-1 min-h-auto sm:min-h-[460px]">
               {/* Mobile Title */}
-              <div className="bg-[#FFAA01]  rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden">
+              <div className="bg-[#FED230]  rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden">
                 <h3 className="text-black font-semibold text-center text-[14px]">
                   Snacks
                 </h3>
@@ -366,7 +366,7 @@ const App: React.FC = () => {
             </div>
             <div className="space-y-2 sm:space-y-4 relative col-span-1 sm:col-span-1 mt-6 sm:mt-0">
               {/* Mobile Title */}
-              <div className="bg-[#FFAA01]  rounded-md py-2 sm:py-3 w-full mb-1 sm:mb-2 sm:hidden mt-auto sm:mt-[16px]">
+              <div className="bg-[#FED230]  rounded-md py-2 sm:py-3 w-full mb-1 sm:mb-2 sm:hidden mt-auto sm:mt-[16px]">
                 <h3 className="text-black font-semibold text-center text-[14px]">
                   Tea & Coffee
                 </h3>
@@ -423,7 +423,7 @@ const App: React.FC = () => {
           {/* Chinese Section */}
           <div className="w-full mx-2 sm:mx-4 mb-4 mt-10 sm:mt-[5%]">
             <div className="space-y-2 sm:space-y-4 relative w-full">
-              <div className="bg-[#FFAA01] rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4 !w-[95%] sm:!w-[100%]">
+              <div className="bg-[#FED230] rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4 !w-[95%] sm:!w-[100%]">
                 <h3 className="text-black font-semibold text-center text-[18px] sm:text-[30px] ">
                   Chinese Dishes
                 </h3>
@@ -450,7 +450,7 @@ const App: React.FC = () => {
           {/* Samyang Noodles Section */}
           <div className="w-full mx-2 sm:mx-4 mb-4 mt-2 sm:mt-[5%]">
             <div className="space-y-2 sm:space-y-4 relative w-full">
-              <div className="bg-[#FFAA01] rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4 !w-[95%] sm:!w-[100%]">
+              <div className="bg-[#FED230] rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4 !w-[95%] sm:!w-[100%]">
                 <h3 className="text-black font-semibold text-center text-[18px] sm:text-[30px]">
                   Samyang Noodles( Veg / NonVeg)
                 </h3>
@@ -477,7 +477,7 @@ const App: React.FC = () => {
           {/* Speciality Section */}
           <div className="w-full mx-2 sm:mx-4 mb-4 mt-2 sm:mt-[5%]">
             <div className="space-y-2 sm:space-y-4 relative w-full">
-              <div className="bg-[#FFAA01]  rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4 !w-[95%] sm:!w-[100%]">
+              <div className="bg-[#FED230]  rounded-md py-2 sm:py-3 w-full mb-2 sm:mb-4 !w-[95%] sm:!w-[100%]">
                 <h3 className="text-black font-semibold text-center text-[18px] sm:text-[30px]">
                   Speciality Items
                 </h3>
@@ -501,7 +501,7 @@ const App: React.FC = () => {
             </div>
           </div>
 
-          <div className="my-[5%] bg-[#FFAA01]  relative p-[10px] py-[1%] rounded-2xl h-[60px] sm:h-[150px] flex justify-center items-center">
+          <div className="my-[5%] bg-[#FED230]  relative p-[10px] py-[1%] rounded-2xl h-[60px] sm:h-[150px] flex justify-center items-center">
             <h1 className="text-[18px] sm:text-[50px] font-bold text-black z-20">
               Alcoholic Beverages
             </h1>
@@ -520,12 +520,12 @@ const App: React.FC = () => {
           {/* Drinks Sections */}
           {/* Desktop/Web Titles */}
           <div className="grid grid-cols-2 gap-2 mx-4 mb-4 hidden sm:grid">
-            <div className="rounded-lg py-3 bg-[#FFAA01]  w-[90%]">
+            <div className="rounded-lg py-3 bg-[#FED230]  w-[90%]">
               <h3 className="text-black text-center font-semibold text-[14px] sm:text-[30px]">
                 Whiskey
               </h3>
             </div>
-            <div className="rounded-lg py-3 bg-[#FFAA01]  w-[100%]">
+            <div className="rounded-lg py-3 bg-[#FED230]  w-[100%]">
               <h3 className="text-black text-center font-semibold text-[14px] sm:text-[30px]">
                 Beer & Wine
               </h3>
@@ -536,7 +536,7 @@ const App: React.FC = () => {
           <div className="grid grid-cols-3 sm:grid-cols-2 gap-2 sm:gap-4 mx-2 sm:mx-4 pb-8">
             <div className="space-y-2 sm:space-y-4 relative col-span-1">
               {/* Mobile Title */}
-              <div className="bg-[#FFAA01]  rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden">
+              <div className="bg-[#FED230]  rounded-md py-2 sm:py-3 w-full mt-6 sm:mt-0 mb-1 sm:mb-2 sm:hidden">
                 <h3 className="text-black text-center font-semibold text-[14px]">
                   Whiskey
                 </h3>
@@ -551,7 +551,7 @@ const App: React.FC = () => {
             </div>
             <div className="space-y-2 sm:space-y-4 relative col-span-1 sm:col-span-1 mt-6 sm:mt-0">
               {/* Mobile Title */}
-              <div className="bg-[#FFAA01] rounded-md py-2 sm:py-3 w-full mb-1 sm:mb-2 sm:hidden">
+              <div className="bg-[#FED230] rounded-md py-2 sm:py-3 w-full mb-1 sm:mb-2 sm:hidden">
                 <h3 className="text-black text-center font-semibold text-[14px]">
                   Beer & Wine
                 </h3>
@@ -563,13 +563,13 @@ const App: React.FC = () => {
                   </h4>
                 </div>
               ))}
-              <div className="rounded-lg py-3 bg-[#FFAA01]  w-[100%] mt-6 hidden sm:block">
+              <div className="rounded-lg py-3 bg-[#FED230]  w-[100%] mt-6 hidden sm:block">
                 <h3 className="text-black text-center font-semibold text-[14px] sm:text-[30px]">
                   Wine
                 </h3>
               </div>
               {/* Mobile Title for Wine */}
-              <div className="bg-[#FFAA01]  rounded-md py-2 sm:py-3 w-full mb-1 sm:mb-2 sm:hidden mt-6">
+              <div className="bg-[#FED230]  rounded-md py-2 sm:py-3 w-full mb-1 sm:mb-2 sm:hidden mt-6">
                 <h3 className="text-black  font-semibold text-center text-[14px]">
                   Wine
                 </h3>
